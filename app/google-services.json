@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "500783675955",
+    "firebase_url": "https://dukusho-5b08c.firebaseio.com",
+    "project_id": "dukusho-5b08c",
+    "storage_bucket": "dukusho-5b08c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500783675955:android:6f59469982fe55fb",
+        "android_client_info": {
+          "package_name": "com.example.dukusho_nv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500783675955-8tabessmhvmneisnkveflp6jmgmqlgu0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dukusho_nv",
+            "certificate_hash": "7fd57a2d48112c576634705566538c6bb2b915eb"
+          }
+        },
+        {
+          "client_id": "500783675955-kl9gl2hgo7n3vil8vhdo802i6g2jmuce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQdrF456Q8oCZPz4hNM9qajQTMLkupsMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500783675955-kl9gl2hgo7n3vil8vhdo802i6g2jmuce.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

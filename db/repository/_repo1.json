@@ -1,0 +1,16 @@
+{
+  "books": [
+    {
+      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/respository/index.jpg",
+      "title": "Libro selva",
+      "author": "Rudyard Kipling",
+      "url": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/respository/libro1.json"
+    },
+    {
+      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/index.jpg",
+      "title": "Dumbo",
+      "author": "tal y tal",
+      "url": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/respository/libro2.json"
+    }
+  ]
+}
