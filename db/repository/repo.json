@@ -1,34 +1,44 @@
 {
   "books": [
     {
+      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/portada1.jpg",
       "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/portada1.jpg",
       "title": "Isekai",
       "author": "claw",
       "url": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/respository/libro1.json",
       "pages": [
         {
+          "id": "0",
           "image":  "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/page1.jpg",
-          "text": "Estas enfrente del instituro que haces?",
+          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi"
+
+        },
+
+        {
+          "id": "1",
+          "image":  "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/page1.jpg",
+          "text": "Que haras ir al insti o hacer campana ",
           "option1": {
             "dest": "2",
-            "text": "Entrar"
+            "text": "Ir al insti :c"
           },
           "option2" : {
-            "dest": "4",
-            "text": "Fugarse"
+            "dest": "3",
+            "text": "Irme a pasarmelo bien :D"
           }
         },
+
         {
+          "id": "2",
           "image":  "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/page1.jpg",
-          "text": "Estas enfrente del instituro que haces?",
-          "option1": {
-            "dest": "2",
-            "text": "Entrar"
-          },
-          "option2" : {
-            "dest": "4",
-            "text": "Fugarse"
-          }
+          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?"
+
+        },
+        {
+          "id": "3",
+          "image":  "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/page1.jpg",
+          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero"
+
         }
       ]
     }
