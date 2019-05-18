@@ -1,0 +1,36 @@
+{
+"books": [
+{
+"cover": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/portada1.jpg",
+"title": "Isekai",
+"author": "claw",
+"url": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/respository/libro1.json",
+"pages": [
+{
+"image": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/page1.jpg",
+"text": "Estas enfrente del instituro que haces?",
+"option1": {
+"dest": "2",
+"text": "Entrar"
+},
+"option2": {
+"dest": "4",
+"text": "Fugarse"
+}
+},
+{
+"image": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/page1.jpg",
+"text": "Estas enfrente del instituro que haces?",
+"option1": {
+"dest": "2",
+"text": "Entrar"
+},
+"option2": {
+"dest": "4",
+"text": "Fugarse"
+}
+}
+]
+}
+]
+}
