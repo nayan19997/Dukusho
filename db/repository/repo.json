@@ -1,8 +1,8 @@
 {
   "books": [
     {
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/1.jpg",
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
+      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/1.jpg",
+      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
       "title": "Isekai",
       "author": "claw",
       "url": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/respository/libro1.json",
@@ -43,9 +43,8 @@
     },
 
     {
-
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
       "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/libro_2_cover.png",
+      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
       "title": "Death Note",
       "author": "claw",
       "url": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/respository/libro1.json",
