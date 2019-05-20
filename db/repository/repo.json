@@ -9,6 +9,30 @@
       "pages": [
         {
           "id": "0",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/prueba1.png",
+          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
+          "pjname" : "Claw"
+        },
+         {
+          "id": "0",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
+          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
+          "pjname" : "Claw"
+        },
+         {
+          "id": "0",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
+          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
+          "pjname" : "Claw"
+        },
+         {
+          "id": "0",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
+          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
+          "pjname" : "Claw"
+        },
+         {
+          "id": "0",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
           "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
           "pjname" : "Claw"
