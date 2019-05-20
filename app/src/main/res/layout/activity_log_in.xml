@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/iniciarsessionx"
@@ -10,10 +11,11 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="346dp"
-        android:layout_height="435dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_width="340dp"
+        android:layout_height="412dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="8dp"
         android:background="#b3ffffff"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
@@ -21,73 +23,84 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.497"
-        app:layout_constraintVertical_weight="1"
         tools:ignore="MissingConstraints">
 
 
-        <EditText
-            android:id="@+id/emailinput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_marginTop="80dp"
-            android:layout_marginBottom="5dp"
-            android:hint="Correo electrónico"
-            android:paddingBottom="5dp"
-            app:layout_constraintBottom_toTopOf="@+id/passwordinput"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.81" />
-
-        <EditText
-            android:id="@+id/passwordinput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_marginStart="6dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="6dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Contraseña"
-            android:inputType="textPassword"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/emailinput" />
-
         <Button
             android:id="@+id/btn_gmail"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="18dp"
-            android:layout_marginBottom="8dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="20dp"
             android:background="@drawable/gmail"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/btn_github"
+            app:layout_constraintEnd_toStartOf="@+id/btn_face"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <Button
+            android:id="@+id/btn_face"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/btn_face"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/btn_twiter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_gmail"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <Button
+            android:id="@+id/btn_twiter"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="31dp"
+            android:background="@drawable/btn_twitter"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/btn_github"
+            app:layout_constraintTop_toBottomOf="@+id/btn_face" />
+
+        <Button
+            android:id="@+id/btn_github"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="31dp"
+            android:background="@drawable/btn_github"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_twiter"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/passwordinput"
-            app:layout_constraintVertical_bias="0.562" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_gmail" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="282dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/iniciar_sesion" />
 
 
     </android.support.constraint.ConstraintLayout>
-
-    <Button
-        android:id="@+id/btn_LogIn"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="172dp"
-        android:background="#2196F3"
-        android:text="Iniciar Sesion"
-        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
 
 
 </android.support.constraint.ConstraintLayout>

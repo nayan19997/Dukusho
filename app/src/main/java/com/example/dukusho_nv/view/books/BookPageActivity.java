@@ -9,11 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.dukusho_nv.R;
-import com.example.dukusho_nv.model.Book;
 import com.example.dukusho_nv.model.Page;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -22,12 +20,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.ArrayList;
-
 public class BookPageActivity extends AppCompatActivity {
     ImageView fondopage;
-    TextView namepj, textopage;
-    Button option1, option2;
+    TextView pjname, textopage;
+    Button option1, option2, next,previous;
 
     private String uid;
     private DatabaseReference mRef;
@@ -41,16 +37,21 @@ public class BookPageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_book_page);
 
         fondopage = findViewById(R.id.fondopage);
-        namepj = findViewById(R.id.namepj);
+        pjname = findViewById(R.id.namepj);
         textopage = findViewById(R.id.textopage);
-//        option1 = findViewById(R.id.option1);
+        next = findViewById(R.id.button_next);
+        previous = findViewById(R.id.button_previous);
+        option1 = findViewById(R.id.btn_option1);
+        option2 = findViewById(R.id.btn_option2);
+
+
 
         mRef = FirebaseDatabase.getInstance().getReference();
         uid = FirebaseAuth.getInstance().getUid();
 
 
         bookKey = getIntent().getStringExtra("BOOK_KEY");
-        pageNum = getIntent().getIntExtra("PAGE_NUM", -1);
+        pageNum = getIntent().getIntExtra("PAGE_NUM", 0);
 
         if(pageNum == -1) { // venimos de mybooks
             mRef.child(uid).child(bookKey).child("currentPage").addListenerForSingleValueEvent(new ValueEventListener() {
@@ -102,12 +103,54 @@ public class BookPageActivity extends AppCompatActivity {
         Glide.with(BookPageActivity.this)
                 .load(page.image)
                 .into(fondopage);
+        textopage.setText(page.text);
+        pjname.setText(page.pjname);
+
+
+        if (page.option1 != null){
+
+            option1.setText(page.option1.text);
+            option2.setText(page.option2.text);
+
+            option1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(BookPageActivity.this, BookPageActivity.class);
+                    intent.putExtra("PAGE_NUM", page.option1.dest);
+                    startActivity(intent);
+                    finish();
+                }
+            });
+            option2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(BookPageActivity.this, BookPageActivity.class);
+                    intent.putExtra("PAGE_NUM", page.option2.dest);
+                    startActivity(intent);
+                    finish();
+                }
+            });
+
+
+
+
+
+        }else {
+            assert option1 != null;
+            option1.setVisibility(View.INVISIBLE);
+            option2.setVisibility(View.INVISIBLE);
+
+        }
+
+
+
+
 
 //
 //        button1.setText(page.option1.text);
 //        button1.setOnCLickListfs(onclick sta "PAGE_NUM", page.option1.dest)
 
-        option1.setOnClickListener(new View.OnClickListener() {
+        next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(BookPageActivity.this, BookPageActivity.class);
@@ -117,7 +160,52 @@ public class BookPageActivity extends AppCompatActivity {
 
             }
         });
-//        namepj.setText(page.);
+        previous.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BookPageActivity.this, BookPageActivity.class);
+                intent.putExtra("PAGE_NUM", pageNum - 1);
+                startActivity(intent);
+                finish();
+
+            }
+        });
+//        pjname.setText(page.);
+    }
+
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            hideSystemUI();
+        }
+    }
+    private void hideSystemUI() {
+        // Enables regular immersive mode.
+        // For "lean back" mode, remove SYSTEM_UI_FLAG_IMMERSIVE.
+        // Or for "sticky immersive," replace it with SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_IMMERSIVE
+                        // Set the content to appear under the system bars so that the
+                        // content doesn't resize when the system bars hide and show.
+                        | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                        // Hide the nav bar and status bar
+                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_FULLSCREEN);
+    }
+
+    // Shows the system bars by removing all the flags
+// except for the ones that make the content appear under the system bars.
+
+
+    private void showSystemUI() {
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
     }
 
 }

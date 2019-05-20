@@ -1,44 +1,43 @@
 {
   "books": [
     {
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/portada1.jpg",
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/portada1.jpg",
+      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/1.jpg",
+      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
       "title": "Isekai",
       "author": "claw",
       "url": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/respository/libro1.json",
       "pages": [
         {
           "id": "0",
-          "image":  "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/page1.jpg",
-          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi"
-
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
+          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
+          "pjname" : "Claw"
         },
-
         {
           "id": "1",
-          "image":  "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/page1.jpg",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
           "text": "Que haras ir al insti o hacer campana ",
+          "pjname" : "Claw",
           "option1": {
             "dest": "2",
             "text": "Ir al insti :c"
           },
-          "option2" : {
+          "option2": {
             "dest": "3",
             "text": "Irme a pasarmelo bien :D"
           }
         },
-
         {
           "id": "2",
-          "image":  "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/page1.jpg",
-          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?"
-
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
+          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
+          "pjname" : "Claw"
         },
         {
           "id": "3",
-          "image":  "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/page1.jpg",
-          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero"
-
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
+          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
+          "pjname" : "Claw"
         }
       ]
     }

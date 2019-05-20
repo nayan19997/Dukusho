@@ -43,13 +43,5 @@ public class DukushoRepository {
         return repo;
     }
 
-//    public void insertBook(Book book){
-//        dukushoDao.insert(book);
-//    }
-//
-//    public LiveData<List<Book>> selectAllBooks(){
-//        return dukushoDao.selectAllBooks();
-//    }
-//
-//    public LiveData<Book> selectBook(int id){ return dukushoDao.selectBook(id); }
+
 }

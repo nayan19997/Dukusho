@@ -3,17 +3,26 @@ package com.example.dukusho_nv.view;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.support.v4.view.GravityCompat;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.view.MenuItem;
+import android.support.design.widget.NavigationView;
+import android.support.v4.widget.DrawerLayout;
+
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 
 import com.bumptech.glide.Glide;
 import com.example.dukusho_nv.DukushoViewModel;
@@ -28,9 +37,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShowRepoActivity extends AppCompatActivity {
+public class RepoActivity extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener {
+
     LibroListAdapter libroListAdapter;
-    final String repoUrl = "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/repository/repo.json";
+    final String repoUrl = "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repo.json";
     DukushoViewModel dukushoViewModel;
 
     DatabaseReference mRef;
@@ -39,7 +50,17 @@ public class ShowRepoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_showrepo);
+        setContentView(R.layout.activity_repo);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+        navigationView.setNavigationItemSelectedListener(this);
 
         mRef = FirebaseDatabase.getInstance().getReference();
         uid = FirebaseAuth.getInstance().getUid();
@@ -60,13 +81,7 @@ public class ShowRepoActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.btnmybooks).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ShowRepoActivity.this, MyBooksActivity.class));
 
-            }
-        });
 
     }
 
@@ -86,7 +101,7 @@ public class ShowRepoActivity extends AppCompatActivity {
             final Book book = bookList.get(i);
 
             bookViewHolder.title.setText(book.title);
-            Glide.with(ShowRepoActivity.this).load(book.cover).into(bookViewHolder.cover);
+            Glide.with(RepoActivity.this).load(book.portada).into(bookViewHolder.portada);
 
             bookViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -104,21 +119,69 @@ public class ShowRepoActivity extends AppCompatActivity {
 
         public class BookViewHolder extends RecyclerView.ViewHolder {
             TextView title;
-            ImageView cover;
+            ImageView portada;
 
             public BookViewHolder(@NonNull View itemView) {
                 super(itemView);
                 title = itemView.findViewById(R.id.book_title);
-                cover = itemView.findViewById(R.id.book_cover);
+                portada = itemView.findViewById(R.id.book_portada);
 
             }
         }
     }
 
 
-}
 
-// $userId$
-//       http://gitt.libr1.json: 0
-//       http://gitt.libr2.json: 3
-//       http://gitt.libr3.json: 7
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.repo, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @SuppressWarnings("StatementWithEmptyBody")
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        // Handle navigation view item clicks here.
+        int id = item.getItemId();
+
+        if (id == R.id.nav_mybooks) {
+            startActivity(new Intent(RepoActivity.this, MyBooksActivity.class));
+
+        } else if (id == R.id.nav_cerrar_sesion) {
+
+//            startActivity(new Intent(RepoActivity.this, LogInActivity.class));
+
+
+        }
+
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
+    }
+}

@@ -19,6 +19,8 @@
     <string name="github_client_id" translatable="false">6814c256c6fe1d6a6a81</string>
     <string name="github_client_secret" translatable="false">8930be912410d699908ab5911c00e93c8bc37e1d</string>
     <string name="firebase_web_host" translatable="false">project-id.firebaseapp.com</string>
+    <string name="title_activity_repo">RepoActivity</string>
+    <string name="title_activity_my_books_actvity">MyBooksActvity</string>
 
 
 </resources>

@@ -5,6 +5,7 @@ import java.util.List;
 public class Book {
   public String title;
   public String cover;
+  public String portada;
   public String author;
   public String url;
 
