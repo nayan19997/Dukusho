@@ -51,7 +51,9 @@ public class BookPageActivity extends AppCompatActivity {
 
 
         bookKey = getIntent().getStringExtra("BOOK_KEY");
-        pageNum = getIntent().getIntExtra("PAGE_NUM", 0);
+        pageNum = getIntent().getIntExtra("PAGE_NUM", -1);
+
+        Log.e("abc", "pagnum " + pageNum);
 
         if(pageNum == -1) { // venimos de mybooks
             mRef.child(uid).child(bookKey).child("currentPage").addListenerForSingleValueEvent(new ValueEventListener() {
@@ -63,16 +65,18 @@ public class BookPageActivity extends AppCompatActivity {
                         pageNum = 0;
                     }
 
-                    savePage();
+                    Log.e("abc", "pagenumcurrent " + pageNum);
+
                     loadPage();
+                    savePage();
                 }
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {}
             });
         } else {
-            savePage();
             loadPage();
+            savePage();
         }
     }
 
@@ -98,6 +102,8 @@ public class BookPageActivity extends AppCompatActivity {
     }
 
     void showPage(final Page page) {
+        if(page == null) return;
+
         Log.e("abc", page.text);
 
         Glide.with(BookPageActivity.this)
@@ -115,19 +121,22 @@ public class BookPageActivity extends AppCompatActivity {
             option1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(BookPageActivity.this, BookPageActivity.class);
-                    intent.putExtra("PAGE_NUM", page.option1.dest);
+                    Intent intent = new Intent(BookPageActivity.this, GoToBookPageActivity.class);
+                    Log.e("abc", "op1.dest " + page.option1.dest);
+                    intent.putExtra("PAGE_NUM", Integer.valueOf(page.option1.dest));
+                    intent.putExtra("BOOK_KEY", bookKey);
                     startActivity(intent);
-                    finish();
+                    //finish();
                 }
             });
             option2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(BookPageActivity.this, BookPageActivity.class);
-                    intent.putExtra("PAGE_NUM", page.option2.dest);
+                    Intent intent = new Intent(BookPageActivity.this, GoToBookPageActivity.class);
+                    intent.putExtra("PAGE_NUM", Integer.valueOf(page.option2.dest));
+                    intent.putExtra("BOOK_KEY", bookKey);
                     startActivity(intent);
-                    finish();
+                    //finish();
                 }
             });
 
@@ -153,8 +162,9 @@ public class BookPageActivity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BookPageActivity.this, BookPageActivity.class);
-                intent.putExtra("PAGE_NUM", pageNum + 1);
+                Intent intent = new Intent(BookPageActivity.this, GoToBookPageActivity.class);
+                intent.putExtra("PAGE_NUM", pageNum +1);
+                intent.putExtra("BOOK_KEY", bookKey);
                 startActivity(intent);
                 finish();
 
@@ -163,8 +173,9 @@ public class BookPageActivity extends AppCompatActivity {
         previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BookPageActivity.this, BookPageActivity.class);
-                intent.putExtra("PAGE_NUM", pageNum - 1);
+                Intent intent = new Intent(BookPageActivity.this, GoToBookPageActivity.class);
+                intent.putExtra("PAGE_NUM", pageNum +1);
+                intent.putExtra("BOOK_KEY", bookKey);
                 startActivity(intent);
                 finish();
 

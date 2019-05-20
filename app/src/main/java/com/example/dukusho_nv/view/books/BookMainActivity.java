@@ -63,7 +63,6 @@ public class BookMainActivity extends AppCompatActivity {
                 Intent intent = new Intent(BookMainActivity.this, BookPageActivity.class);
                 intent.putExtra("BOOK_KEY", bookKey);
                 startActivity(intent);
-                finish();
             }
         });
 

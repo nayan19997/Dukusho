@@ -44,6 +44,8 @@
         <activity
             android:name=".view.books.BookMainActivity"
             android:screenOrientation="landscape"/>
+        <activity android:name=".view.books.GoToBookPageActivity"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>
