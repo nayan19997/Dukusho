@@ -44,8 +44,8 @@
 
     {
 
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/libro_2_cover.png",
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg
+      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
+      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/libro_2_cover.png",
       "title": "Death Note",
       "author": "claw",
       "url": "https://raw.githubusercontent.com/nayan19997/Dukusho_NV/master/db/respository/libro1.json",
@@ -84,5 +84,9 @@
         }
       ]
     }
+
+
+
+
   ]
 }
