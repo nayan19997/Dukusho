@@ -133,6 +133,20 @@
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_9.png",
           "text": "Espero que te diviertas y lo pases bien! No nos defraudes :D .\n",
           "pjname" : "Garen"
+        },
+
+        {
+          "id": "9",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_9.png",
+          "text": "Espero que te diviertas y lo pases bien! No nos defraudes :D .\n",
+          "pjname" : "Garen"
+        },
+        {
+          "id": "10",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_9.png",
+          "image1": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_9.png",
+          "text": "Espero que te diviertas y lo pases bien! No nos defraudes :D .\n",
+          "pjname" : "Garen"
         }
       ]
     }

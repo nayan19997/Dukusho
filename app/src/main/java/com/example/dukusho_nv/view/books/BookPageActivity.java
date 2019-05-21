@@ -21,9 +21,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class BookPageActivity extends AppCompatActivity {
-    ImageView fondopage;
+    ImageView fondopage, quit;
     TextView pjname, textopage;
-    Button option1, option2, next,previous;
+    Button option1, option2, next,previous ;
 
     private String uid;
     private DatabaseReference mRef;
@@ -37,6 +37,7 @@ public class BookPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_page);
 
+        quit = findViewById(R.id.button_final);
         fondopage = findViewById(R.id.fondopage);
         pjname = findViewById(R.id.namepj);
         textopage = findViewById(R.id.textopage);
@@ -107,6 +108,10 @@ public class BookPageActivity extends AppCompatActivity {
         Glide.with(BookPageActivity.this)
                 .load(page.image)
                 .into(fondopage);
+
+        Glide.with(BookPageActivity.this)
+                .load(page.image1)
+                .into(quit);
         textopage.setText(page.text);
         pjname.setText(page.pjname);
 
@@ -178,7 +183,9 @@ public class BookPageActivity extends AppCompatActivity {
         if (pageNum == 0){
             previous.setVisibility(View.INVISIBLE);
         }
-
+//    if (pageNum != -1){
+//        quit.setVisibility(View.INVISIBLE);
+//}
 
 
 

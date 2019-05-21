@@ -32,8 +32,10 @@ public class GoToBookPageActivity extends AppCompatActivity {
         intent.putExtra("ERROROPTION", getIntent().getIntExtra("ERROROPTION", 0));
 
         startActivity(intent);
+        finish();
 
-    int erroroption = getIntent().getIntExtra("ERROROPTION", 0);
+
+        int erroroption = getIntent().getIntExtra("ERROROPTION", 0);
 
 
     }

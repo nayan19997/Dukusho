@@ -60,6 +60,20 @@
         app:layout_constraintEnd_toEndOf="@+id/fondopage"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/button_final"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/fondopage"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/fondopage"
+        app:layout_constraintTop_toTopOf="@+id/fondopage"
+        app:layout_constraintVertical_bias="0.689" />
+
     <Button
         android:id="@+id/button_previous"
         android:layout_width="57dp"
