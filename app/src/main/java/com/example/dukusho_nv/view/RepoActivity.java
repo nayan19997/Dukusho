@@ -97,7 +97,7 @@ public class RepoActivity extends AppCompatActivity
         }
 
         @Override
-        public void onBindViewHolder(@NonNull BookViewHolder bookViewHolder, int i) {
+        public void onBindViewHolder(@NonNull final BookViewHolder bookViewHolder, int i) {
             final Book book = bookList.get(i);
 
             bookViewHolder.title.setText(book.title);
@@ -107,7 +107,9 @@ public class RepoActivity extends AppCompatActivity
                 @Override
                 public void onClick(View v) {
                     mRef.child(uid).push().setValue(book);
-//                    mRef.child(uid).child(book.url).setValue(book);
+
+                        Glide.with(RepoActivity.this).load(book.descargado).into(bookViewHolder.portadaDescarga);
+
                 }
             });
         }
@@ -120,11 +122,15 @@ public class RepoActivity extends AppCompatActivity
         public class BookViewHolder extends RecyclerView.ViewHolder {
             TextView title;
             ImageView portada;
+            ImageView portadaDescarga;
+
 
             public BookViewHolder(@NonNull View itemView) {
                 super(itemView);
                 title = itemView.findViewById(R.id.book_title);
                 portada = itemView.findViewById(R.id.book_portada);
+                portadaDescarga = itemView.findViewById(R.id.book_portada_descarga);
+
 
             }
         }

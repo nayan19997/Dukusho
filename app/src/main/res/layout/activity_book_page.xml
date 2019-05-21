@@ -52,25 +52,25 @@
 
     <Button
         android:id="@+id/button_next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/buttonnext"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/next"
         app:layout_constraintEnd_toEndOf="@+id/fondopage"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_previous"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
 
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="156dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/buttonprevious"
+        android:background="@drawable/previus"
         app:layout_constraintEnd_toStartOf="@+id/button_next"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.01"
         app:layout_constraintStart_toStartOf="@+id/fondopage"
         app:layout_constraintTop_toTopOf="parent" />
 

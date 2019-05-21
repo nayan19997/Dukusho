@@ -29,7 +29,11 @@ public class GoToBookPageActivity extends AppCompatActivity {
         Intent intent = new Intent(GoToBookPageActivity.this, BookPageActivity.class);
         intent.putExtra("PAGE_NUM", getIntent().getIntExtra("PAGE_NUM", 0));
         intent.putExtra("BOOK_KEY", getIntent().getStringExtra("BOOK_KEY"));
+        intent.putExtra("ERROROPTION", getIntent().getIntExtra("ERROROPTION", 0));
+
         startActivity(intent);
+
+    int erroroption = getIntent().getIntExtra("ERROROPTION", 0);
 
 
     }

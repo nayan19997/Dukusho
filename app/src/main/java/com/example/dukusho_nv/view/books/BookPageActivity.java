@@ -27,6 +27,7 @@ public class BookPageActivity extends AppCompatActivity {
 
     private String uid;
     private DatabaseReference mRef;
+    private  int erroroption;
 
     Integer pageNum;
     String bookKey;
@@ -53,7 +54,6 @@ public class BookPageActivity extends AppCompatActivity {
         bookKey = getIntent().getStringExtra("BOOK_KEY");
         pageNum = getIntent().getIntExtra("PAGE_NUM", -1);
 
-        Log.e("abc", "pagnum " + pageNum);
 
         if(pageNum == -1) { // venimos de mybooks
             mRef.child(uid).child(bookKey).child("currentPage").addListenerForSingleValueEvent(new ValueEventListener() {
@@ -65,7 +65,6 @@ public class BookPageActivity extends AppCompatActivity {
                         pageNum = 0;
                     }
 
-                    Log.e("abc", "pagenumcurrent " + pageNum);
 
                     loadPage();
                     savePage();
@@ -104,7 +103,6 @@ public class BookPageActivity extends AppCompatActivity {
     void showPage(final Page page) {
         if(page == null) return;
 
-        Log.e("abc", page.text);
 
         Glide.with(BookPageActivity.this)
                 .load(page.image)
@@ -119,29 +117,50 @@ public class BookPageActivity extends AppCompatActivity {
             option2.setText(page.option2.text);
 
             option1.setOnClickListener(new View.OnClickListener() {
+
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(BookPageActivity.this, GoToBookPageActivity.class);
-                    Log.e("abc", "op1.dest " + page.option1.dest);
                     intent.putExtra("PAGE_NUM", Integer.valueOf(page.option1.dest));
                     intent.putExtra("BOOK_KEY", bookKey);
+                    erroroption = 5;
+                    intent.putExtra("ERROROPTION", erroroption);
+
                     startActivity(intent);
-                    //finish();
+
+                    finish();
                 }
             });
+
             option2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(BookPageActivity.this, GoToBookPageActivity.class);
                     intent.putExtra("PAGE_NUM", Integer.valueOf(page.option2.dest));
                     intent.putExtra("BOOK_KEY", bookKey);
+                    intent.putExtra("ERROROPTION", erroroption);
+
                     startActivity(intent);
-                    //finish();
+                    finish();
                 }
             });
+            int prueba = getIntent().getIntExtra("ERROROPTION", 0);
+
+            System.out.println("ABC: "+" erroroption " + erroroption);
+            System.out.println("ABC "+"prueba " + prueba);
 
 
+            System.out.println("ABC "+"antes del if " + pageNum);
 
+
+            if (prueba == 5){
+                pageNum=+1;
+            }
+
+
+            System.out.println("ABC "+"despues del if " + pageNum);
+
+            System.out.println("ABC "+"prueba1 " + prueba);
 
 
         }else {
@@ -151,6 +170,9 @@ public class BookPageActivity extends AppCompatActivity {
 
         }
 
+        if (pageNum == 0){
+            previous.setVisibility(View.INVISIBLE);
+        }
 
 
 
@@ -165,23 +187,28 @@ public class BookPageActivity extends AppCompatActivity {
                 Intent intent = new Intent(BookPageActivity.this, GoToBookPageActivity.class);
                 intent.putExtra("PAGE_NUM", pageNum +1);
                 intent.putExtra("BOOK_KEY", bookKey);
+                intent.putExtra("ERROROPTION", erroroption);
                 startActivity(intent);
                 finish();
 
             }
         });
+        System.out.println("ABC "+"next " + pageNum);
+
+
         previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(BookPageActivity.this, GoToBookPageActivity.class);
-                intent.putExtra("PAGE_NUM", pageNum +1);
+                intent.putExtra("PAGE_NUM", pageNum -1);
                 intent.putExtra("BOOK_KEY", bookKey);
+                intent.putExtra("ERROROPTION", erroroption);
+
                 startActivity(intent);
                 finish();
 
             }
         });
-//        pjname.setText(page.);
     }
 
     public void onWindowFocusChanged(boolean hasFocus) {

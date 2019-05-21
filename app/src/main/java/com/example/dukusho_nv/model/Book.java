@@ -7,7 +7,7 @@ public class Book {
   public String cover;
   public String portada;
   public String author;
-  public String url;
+  public String descargado;
 
   public List<Page> pages;
   public int currentPage;
