@@ -77,11 +77,11 @@
           "pjname" : "Lux",
 
           "option1": {
-            "dest": "2",
+            "dest": "3",
             "text": "Unirse al equipo a pesar de que esta chica tiene cara de loca y no te fias ni un pelo de lo que dice, además de que su hermano te da miedo porque tiene cara de que si te rindes te cortará la cabeza por traidor y por haber fallado al equipo (POR DEMAAAACIA!!)."
           },
           "option2": {
-            "dest": "3",
+            "dest": "4",
             "text": "Rechazar la oferta de poder ser el “primer novato” que ganó su primera batalla en este juego cuando nunca antes habías jugado. Sin embargo, ese tal Garen da un poco de miedo y respeto, si rechazas la oferta seguro te juzga de traidor."
           }
         },
