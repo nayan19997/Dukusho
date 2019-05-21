@@ -14,17 +14,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".view.AddRepoActivity"></activity>
         <activity
             android:name=".view.MyBooksActivity"
             android:label="@string/title_activity_my_books_actvity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".view.RepoActivity"
             android:label="@string/title_activity_repo"
             android:theme="@style/AppTheme.NoActionBar" />
-
-
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,20 +30,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".LogInActivity"
             android:theme="@style/AppTheme" />
-
-
         <activity
             android:name=".view.books.BookPageActivity"
             android:screenOrientation="landscape" />
         <activity
             android:name=".view.books.BookMainActivity"
-            android:screenOrientation="landscape"/>
-        <activity android:name=".view.books.GoToBookPageActivity"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".view.books.GoToBookPageActivity"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>

@@ -160,10 +160,10 @@ public class MyBooksActivity extends AppCompatActivity
         if (id == R.id.nav_repository) {
             startActivity(new Intent(MyBooksActivity.this, RepoActivity.class));
 
-//        } else if (id == R.id.nv_btn_repository) {
-//            startActivity(new Intent(MyBooksActivity.this, MyBooksActivity.class));
-//
-//
+        } else if (id == R.id.nav_addurl) {
+            startActivity(new Intent(MyBooksActivity.this, AddRepoActivity.class));
+
+
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".view.MyBooksActivity"
-    android:background="#FDF4B4"
+    android:background="@drawable/fondo2"
     tools:showIn="@layout/app_bar_my_books_actvity">
 
     <android.support.v7.widget.RecyclerView

@@ -41,15 +41,26 @@ public class RepoActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     LibroListAdapter libroListAdapter;
-    final String repoUrl = "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repo.json";
+    String url="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repo.json";
     DukushoViewModel dukushoViewModel;
 
     DatabaseReference mRef;
     String uid;
+    String addulr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        final String repoUrl;
+        addulr = getIntent().getStringExtra("ADDREPO");
+            if (addulr == null){
+                repoUrl = url;
+            }else{
+                repoUrl = addulr;
+            }
+
+
         setContentView(R.layout.activity_repo);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -184,6 +195,8 @@ public class RepoActivity extends AppCompatActivity
 //            startActivity(new Intent(RepoActivity.this, LogInActivity.class));
 
 
+        } else if (id == R.id.nav_addurl) {
+            startActivity(new Intent(RepoActivity.this, AddRepoActivity.class));
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
