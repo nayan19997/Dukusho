@@ -33,8 +33,5 @@ public class AddRepoActivity extends AppCompatActivity {
         });
 
 
-        System.out.println("AAAA"+"edit tect " + eturl);
-
-
     }
 }

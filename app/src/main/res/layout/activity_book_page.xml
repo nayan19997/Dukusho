@@ -36,6 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#FFFFFF"
+            android:layout_marginLeft="16dp"
             android:textSize="20dp" />
 
 
@@ -44,6 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text=""
+            android:layout_margin="16dp"
             android:textColor="#FFFFFF"
             android:textSize="18dp" />
 
@@ -98,6 +100,7 @@
         android:layout_marginEnd="320dp"
         android:layout_marginBottom="15dp"
         android:text="option1"
+        android:background="#AE555555"
         app:layout_constraintBottom_toTopOf="@+id/btn_option2"
         app:layout_constraintEnd_toEndOf="@+id/fondopage"
         app:layout_constraintHorizontal_bias="1.0"
@@ -110,6 +113,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="36dp"
+        android:background="#AE555555"
         android:text="option2"
         app:layout_constraintEnd_toEndOf="@+id/fondopage"
         app:layout_constraintHorizontal_bias="0.496"

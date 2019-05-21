@@ -1,8 +1,11 @@
 package com.example.dukusho_nv.view;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -87,7 +90,7 @@ public class MyBooksActivity extends AppCompatActivity
         }
 
         @Override
-        protected void onBindViewHolder(@NonNull BookViewHolder bookViewHolder, final int position, @NonNull final Book book) {
+        protected void onBindViewHolder(@NonNull final BookViewHolder bookViewHolder, final int position, @NonNull final Book book) {
             bookViewHolder.title.setText(book.title);
             Glide.with(MyBooksActivity.this).load(book.portada).into(bookViewHolder.portada);
 
@@ -99,18 +102,54 @@ public class MyBooksActivity extends AppCompatActivity
                     startActivity(intent);
                 }
             });
+
+            bookViewHolder.layout.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+                    String[] options = { "Eliminar libro" , "Compartir"};
+
+                    AlertDialog.Builder builder = new AlertDialog.Builder(bookViewHolder.itemView.getContext());
+                    builder.setTitle("Elige una accion: ");
+                    builder.setItems(options, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            switch (which) {
+                                case 0:
+                                    libroListAdapter.notifyItemRemoved(position);
+                                    libroListAdapter.notifyItemRangeChanged(position, libroListAdapter.getItemCount());
+                                    mRef.child(uid).child(getRef(position).getKey()).removeValue();
+                                    break;
+
+                                case 1:
+                                    Intent intent = new Intent(MyBooksActivity.this, PreShareActivity.class);
+                                    intent.putExtra("Libro", book);
+                                    startActivity(intent);
+
+
+                                    break;
+                                default:
+                                    break;
+                            }
+                        }
+                    });
+                    builder.show();
+
+                    return true;
+                }
+            });
         }
 
 
         public class BookViewHolder extends RecyclerView.ViewHolder {
             TextView title;
             ImageView portada;
+            ConstraintLayout layout;
 
             public BookViewHolder(@NonNull View itemView) {
                 super(itemView);
                 title = itemView.findViewById(R.id.book_title);
                 portada = itemView.findViewById(R.id.book_portada);
-
+                layout = itemView.findViewById(R.id.selection);
             }
         }
     }
@@ -164,6 +203,8 @@ public class MyBooksActivity extends AppCompatActivity
             startActivity(new Intent(MyBooksActivity.this, AddRepoActivity.class));
 
 
+        }else if (id == R.id.nav_compartido) {
+            startActivity(new Intent(MyBooksActivity.this, BookSharedActivity.class));
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

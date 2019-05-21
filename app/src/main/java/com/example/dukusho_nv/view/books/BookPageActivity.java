@@ -1,6 +1,8 @@
 package com.example.dukusho_nv.view.books;
 
 import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.dukusho_nv.R;
@@ -20,9 +23,13 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class BookPageActivity extends AppCompatActivity {
     ImageView fondopage;
     TextView pjname, textopage;
+    int seg = 50;
     Button option1, option2, next,previous;
 
     private String uid;
@@ -30,6 +37,7 @@ public class BookPageActivity extends AppCompatActivity {
     private  int erroroption;
 
     Integer pageNum;
+    static long size;
     String bookKey;
 
     @Override
@@ -85,6 +93,29 @@ public class BookPageActivity extends AppCompatActivity {
     }
 
     void loadPage(){
+
+        mRef.child(uid).child(bookKey).child("/pages").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                size = dataSnapshot.getChildrenCount();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+        System.out.println("ABCD -> pnum -> " + pageNum);
+        System.out.println("ABCD -> size -> " + size);
+
+        if (size != 0) {
+            if (pageNum == size) {
+                Toast.makeText(getApplicationContext(), "Libro finish", Toast.LENGTH_LONG).show();
+                finish();
+            }
+        }
+
         mRef.child(uid).child(bookKey).child("/pages").child(String.valueOf(pageNum)).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot ) {
@@ -107,8 +138,18 @@ public class BookPageActivity extends AppCompatActivity {
         Glide.with(BookPageActivity.this)
                 .load(page.image)
                 .into(fondopage);
-        textopage.setText(page.text);
+        setSlowlyText(page.text);
         pjname.setText(page.pjname);
+
+
+//prueba letra por lecta//
+
+
+        /////
+
+
+
+
 
 
         if (page.option1 != null){
@@ -157,30 +198,13 @@ public class BookPageActivity extends AppCompatActivity {
 
         int prueba = getIntent().getIntExtra("ERROROPTION", 0);
 
-        System.out.println("ABC: "+" erroroption " + erroroption);
-        System.out.println("ABC "+"prueba " + prueba);
-
-
-        System.out.println("ABC "+"antes del if " + pageNum);
-
-
         if (prueba == 5){
             pageNum++;
         }
 
-
-        System.out.println("ABC "+"despues del if " + pageNum);
-
-        System.out.println("ABC "+"prueba1 " + prueba);
-
-
-
         if (pageNum == 0){
             previous.setVisibility(View.INVISIBLE);
         }
-
-
-
 
 //
 //        button1.setText(page.option1.text);
@@ -198,8 +222,6 @@ public class BookPageActivity extends AppCompatActivity {
 
             }
         });
-        System.out.println("ABC "+"next " + pageNum);
-
 
         previous.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -212,6 +234,14 @@ public class BookPageActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
 
+            }
+        });
+
+
+        fondopage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                seg = 10;
             }
         });
     }
@@ -244,11 +274,47 @@ public class BookPageActivity extends AppCompatActivity {
 
 
     private void showSystemUI() {
+        int seg = 50;
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                         | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+    }
+
+
+    public void setSlowlyText(final String s)
+    {
+
+
+        final TextView tv= (TextView) findViewById(R.id.textopage);
+        final int[] i = new int[1];
+
+        i[0] = 0;
+        final int length = s.length();
+        final Handler handler = new Handler()
+        {
+            @Override
+            public void handleMessage(Message msg) {
+                super.handleMessage(msg);
+                char c= s.charAt(i[0]);
+                Log.d("Strange",""+c);
+                tv.append(String.valueOf(c));
+                i[0]++;
+            }
+        };
+
+        final Timer timer = new Timer();
+        TimerTask taskEverySplitSecond = new TimerTask() {
+            @Override
+            public void run() {
+                handler.sendEmptyMessage(0);
+                if (i[0] == length - 1) {
+                    timer.cancel();
+                }
+            }
+        };
+        timer.schedule(taskEverySplitSecond, 1, seg);
     }
 
 }

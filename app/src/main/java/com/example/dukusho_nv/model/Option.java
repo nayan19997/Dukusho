@@ -1,6 +1,8 @@
 package com.example.dukusho_nv.model;
 
-public class Option {
+import java.io.Serializable;
+
+public class Option implements Serializable {
     public String dest;
     public String text;
 

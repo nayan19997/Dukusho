@@ -17,6 +17,11 @@
             android:icon="@drawable/addrepo"
             android:title="Add Repository" />
 
+        <item
+            android:id="@+id/nav_compartido"
+            android:icon="@drawable/shared"
+            android:title="Shared" />
+
 
         <item android:title="Configuracion">
             <menu>

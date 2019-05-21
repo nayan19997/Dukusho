@@ -22,6 +22,7 @@ import android.view.Menu;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.bumptech.glide.Glide;
@@ -117,12 +118,18 @@ public class RepoActivity extends AppCompatActivity
             bookViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
                     mRef.child(uid).push().setValue(book);
 
-                        Glide.with(RepoActivity.this).load(book.descargado).into(bookViewHolder.portadaDescarga);
+                    Glide.with(RepoActivity.this).load(book.descargado).into(bookViewHolder.portadaDescarga);
+                    v.setClickable(false);
+                    Toast.makeText(getApplicationContext(), "Descargando...", Toast.LENGTH_SHORT).show();
 
+                    Toast.makeText(getApplicationContext(), "DESCARGADO CORRECTAMENTE", Toast.LENGTH_SHORT).show();
                 }
             });
+
+
         }
 
         @Override
@@ -197,6 +204,8 @@ public class RepoActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_addurl) {
             startActivity(new Intent(RepoActivity.this, AddRepoActivity.class));
+        }else if (id == R.id.nav_compartido) {
+            startActivity(new Intent(RepoActivity.this, BookSharedActivity.class));
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
