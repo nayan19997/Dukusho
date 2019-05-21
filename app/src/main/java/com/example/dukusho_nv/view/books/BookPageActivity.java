@@ -144,24 +144,9 @@ public class BookPageActivity extends AppCompatActivity {
                     finish();
                 }
             });
-            int prueba = getIntent().getIntExtra("ERROROPTION", 0);
 
-            System.out.println("ABC: "+" erroroption " + erroroption);
-            System.out.println("ABC "+"prueba " + prueba);
-
-
-            System.out.println("ABC "+"antes del if " + pageNum);
-
-
-            if (prueba == 5){
-                pageNum=+1;
-            }
-
-
-            System.out.println("ABC "+"despues del if " + pageNum);
-
-            System.out.println("ABC "+"prueba1 " + prueba);
-
+            next.setVisibility(View.INVISIBLE);
+            previous.setVisibility(View.INVISIBLE);
 
         }else {
             assert option1 != null;
@@ -169,6 +154,26 @@ public class BookPageActivity extends AppCompatActivity {
             option2.setVisibility(View.INVISIBLE);
 
         }
+
+        int prueba = getIntent().getIntExtra("ERROROPTION", 0);
+
+        System.out.println("ABC: "+" erroroption " + erroroption);
+        System.out.println("ABC "+"prueba " + prueba);
+
+
+        System.out.println("ABC "+"antes del if " + pageNum);
+
+
+        if (prueba == 5){
+            pageNum++;
+        }
+
+
+        System.out.println("ABC "+"despues del if " + pageNum);
+
+        System.out.println("ABC "+"prueba1 " + prueba);
+
+
 
         if (pageNum == 0){
             previous.setVisibility(View.INVISIBLE);
