@@ -2,6 +2,7 @@ package com.example.dukusho_nv.view;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AlertDialog;
@@ -14,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.dukusho_nv.DukushoViewModel;
@@ -36,7 +38,6 @@ public class BookSharedActivity extends AppCompatActivity {
     DukushoViewModel dukushoViewModel;
     private DatabaseReference mRef;
     private String uid;
-    FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,24 +79,28 @@ public class BookSharedActivity extends AppCompatActivity {
         }
 
         @Override
-        protected void  onBindViewHolder(@NonNull BookViewHolder bookViewHolder , final int position, @NonNull final Book book) {
-                if (firebaseUser != null){
-                    GlideApp.with(BookSharedActivity.this).load(firebaseUser.getPhotoUrl()).circleCrop().into(bookViewHolder.userimg);
-                    bookViewHolder.username.setText(firebaseUser.getDisplayName());
-                }
+        protected void  onBindViewHolder(@NonNull final BookViewHolder bookViewHolder , final int position, @NonNull final Book book) {
+
+
+            GlideApp.with(BookSharedActivity.this).load(book.userimg).circleCrop().into(bookViewHolder.userimg);
+            bookViewHolder.username.setText(book.username);
+
             bookViewHolder.title.setText(book.title);
             Glide.with(BookSharedActivity.this).load(book.portada).into(bookViewHolder.portada);
             bookViewHolder.authorname.setText(book.author);
             bookViewHolder.coment.setText(book.coment);
 
-
-
             bookViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(BookSharedActivity.this, BookMainActivity.class);
-                    intent.putExtra("BOOK_KEY", getRef(position).getKey());
-                    startActivity(intent);
+
+                    mRef.child(uid).push().setValue(book);
+
+                    Glide.with(BookSharedActivity.this).load(book.descargado).into(bookViewHolder.portada);
+                    v.setClickable(false);
+                    Toast.makeText(getApplicationContext(), "Descargando...", Toast.LENGTH_SHORT).show();
+
+                    Toast.makeText(getApplicationContext(), "DESCARGADO CORRECTAMENTE", Toast.LENGTH_SHORT).show();
                 }
             });
 

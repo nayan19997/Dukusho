@@ -1,5 +1,7 @@
 package com.example.dukusho_nv.model;
 
+import android.net.Uri;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -8,6 +10,8 @@ public class Book  implements Serializable {
   public String cover;
   public String portada;
   public String author;
+  public String username;
+  public String userimg;
   public String coment;
   public String descargado;
 

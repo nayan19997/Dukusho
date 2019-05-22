@@ -14,6 +14,7 @@ import com.example.dukusho_nv.R;
 import com.example.dukusho_nv.model.Book;
 import com.example.dukusho_nv.view.books.BookPageActivity;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -21,6 +22,7 @@ public class PreShareActivity extends AppCompatActivity {
     DatabaseReference mRef;
     String uid;
     Book book;
+    FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,11 +49,12 @@ public class PreShareActivity extends AppCompatActivity {
                 String texto = editText.getText().toString();
                 book.coment = texto;
 
+                book.username = firebaseUser.getDisplayName();
+                book.userimg = firebaseUser.getPhotoUrl().toString();
+
                 mRef.child("/compartido").push().setValue(book);
                 Toast.makeText(getApplicationContext(),"Compartido",Toast.LENGTH_SHORT).show();
                 finish();
-
-
             }
         });
     }
