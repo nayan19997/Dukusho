@@ -17,12 +17,15 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.dukusho_nv.DukushoViewModel;
+import com.example.dukusho_nv.GlideApp;
+import com.example.dukusho_nv.LogInActivity;
 import com.example.dukusho_nv.R;
 import com.example.dukusho_nv.model.Book;
 import com.example.dukusho_nv.view.books.BookMainActivity;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -33,6 +36,8 @@ public class BookSharedActivity extends AppCompatActivity {
     DukushoViewModel dukushoViewModel;
     private DatabaseReference mRef;
     private String uid;
+    FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,10 +50,10 @@ public class BookSharedActivity extends AppCompatActivity {
         uid = FirebaseAuth.getInstance().getUid();
 
         RecyclerView recyclerView = findViewById(R.id.book_list);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 1));
 
         FirebaseRecyclerOptions firebaseOptions = new FirebaseRecyclerOptions.Builder<Book>()
-                .setQuery(mRef.child(uid), Book.class)
+                .setQuery(mRef.child("/compartido"), Book.class)
                 .setLifecycleOwner(this)
                 .build();
 
@@ -67,14 +72,22 @@ public class BookSharedActivity extends AppCompatActivity {
         @NonNull
         @Override
         public BookViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-            View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.book_viewholder, viewGroup, false);
+            View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.bookshared_item, viewGroup, false);
             return new BookViewHolder(view);
+
         }
 
         @Override
         protected void  onBindViewHolder(@NonNull BookViewHolder bookViewHolder , final int position, @NonNull final Book book) {
+                if (firebaseUser != null){
+                    GlideApp.with(BookSharedActivity.this).load(firebaseUser.getPhotoUrl()).circleCrop().into(bookViewHolder.userimg);
+                    bookViewHolder.username.setText(firebaseUser.getDisplayName());
+                }
             bookViewHolder.title.setText(book.title);
             Glide.with(BookSharedActivity.this).load(book.portada).into(bookViewHolder.portada);
+            bookViewHolder.authorname.setText(book.author);
+            bookViewHolder.coment.setText(book.coment);
+
 
 
             bookViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -90,15 +103,19 @@ public class BookSharedActivity extends AppCompatActivity {
 
 
         public class BookViewHolder extends RecyclerView.ViewHolder {
-            TextView title;
-            ImageView portada;
-            ConstraintLayout layout;
+            TextView username,title,authorname,coment;
+            ImageView userimg,portada;
 
             public BookViewHolder(@NonNull View itemView) {
                 super(itemView);
+                username= itemView.findViewById(R.id.user_name);
+                userimg = itemView.findViewById(R.id.user_img);
+
+                portada = itemView.findViewById(R.id.book_img);
                 title = itemView.findViewById(R.id.book_title);
-                portada = itemView.findViewById(R.id.book_portada);
-                layout = itemView.findViewById(R.id.selection);
+                authorname = itemView.findViewById(R.id.book_author);
+                coment = itemView.findViewById(R.id.book_coment);
+
             }
         }
 

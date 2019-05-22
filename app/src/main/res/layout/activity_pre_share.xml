@@ -11,8 +11,10 @@
         android:id="@+id/imgpreshare"
         android:layout_width="180dp"
         android:layout_height="250dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="119dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="119dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/btn_face" />
@@ -21,34 +23,39 @@
         android:id="@+id/titlepreshare"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="14dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/imgpreshare"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="Nombre del libro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgpreshare" />
 
 
     <EditText
         android:id="@+id/comentpreshare"
-        android:layout_width="0dp"
+        android:layout_width="350dp"
+
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="117dp"
+        android:hint="Comentario sobre el libro"
+        android:lines="5"
+        app:layout_constraintBottom_toTopOf="@+id/compartir"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titlepreshare" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
     <Button
         android:id="@+id/compartir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_marginStart="158dp"
-        android:layout_marginTop="91dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="131dp"
-        android:text="Comparit"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/btn_share"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/comentpreshare" />
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

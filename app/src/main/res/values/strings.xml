@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Dukusho_NV</string>
+    <string name="app_name">Dukusho</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -19,8 +19,8 @@
     <string name="github_client_id" translatable="false">6814c256c6fe1d6a6a81</string>
     <string name="github_client_secret" translatable="false">8930be912410d699908ab5911c00e93c8bc37e1d</string>
     <string name="firebase_web_host" translatable="false">project-id.firebaseapp.com</string>
-    <string name="title_activity_repo">RepoActivity</string>
-    <string name="title_activity_my_books_actvity">MyBooksActvity</string>
+    <string name="title_activity_repo">Dokusho</string>
+    <string name="title_activity_my_books_actvity">Dokusho</string>
 
 
 </resources>

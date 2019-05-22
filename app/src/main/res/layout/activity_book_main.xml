@@ -12,47 +12,46 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="216dp"
-        android:background="#000"
         tools:layout_editor_absoluteY="40dp" />
 
 
-    <Button
+    <ImageView
         android:id="@+id/button_jugar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="600dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="550dp"
         android:layout_marginTop="112dp"
-        android:text="Jugar"
+        android:background="@drawable/btn_start"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageView
         android:id="@+id/button_galeria"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="600dp"
-        android:layout_marginTop="12dp"
-        android:text="Galeria"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="550dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_creditos"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_creditos" />
 
-    <Button
+    <ImageView
         android:id="@+id/button_creditos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="600dp"
-        android:layout_marginTop="12dp"
-        android:text="Creditos"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="550dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_bookinfo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_jugar" />
 
-    <Button
+    <ImageView
         android:id="@+id/button_salir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="600dp"
-        android:layout_marginTop="12dp"
-        android:text="Salir"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="575dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_exit"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_galeria" />
 

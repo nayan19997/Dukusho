@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".view.RepoActivity"
-android:background="@drawable/fonde1"
+    android:background="@drawable/fondo3"
     tools:showIn="@layout/app_bar_repo">
 
     <android.support.v7.widget.RecyclerView

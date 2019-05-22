@@ -14,9 +14,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
-        <activity android:name=".view.BookSharedActivity"></activity>
-        <activity android:name=".view.PreShareActivity" />
-        <activity android:name=".view.AddRepoActivity" />
+
+
+
+
+        <activity android:name=".view.BookSharedActivity"
+            android:theme="@style/AppTheme"
+            ></activity>
+        <activity android:name=".view.PreShareActivity"
+            android:theme="@style/AppTheme"
+            />
+
+        <activity android:name=".view.AddRepoActivity"
+            android:theme="@style/AppTheme"
+            />
+
         <activity
             android:name=".view.MyBooksActivity"
             android:label="@string/title_activity_my_books_actvity"
@@ -43,7 +55,8 @@
             android:screenOrientation="landscape" />
         <activity
             android:name=".view.books.GoToBookPageActivity"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape"
+            />
     </application>
 
 </manifest>
