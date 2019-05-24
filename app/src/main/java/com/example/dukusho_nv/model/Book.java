@@ -15,6 +15,13 @@ public class Book  implements Serializable {
   public String coment;
   public String descargado;
 
+  public String sinopsis;
+  public String volumen;
+  public String pagina;
+  public String estado;
+  public String fechadelanzamiento;
+  public String imgpj;
+
   public List<Page> pages;
   public int currentPage;
 }

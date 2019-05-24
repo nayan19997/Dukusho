@@ -25,18 +25,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/button_galeria"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="550dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/btn_creditos"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_creditos" />
+
 
     <ImageView
-        android:id="@+id/button_creditos"
+        android:id="@+id/button_bookinfo"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginStart="550dp"
@@ -46,6 +38,16 @@
         app:layout_constraintTop_toBottomOf="@+id/button_jugar" />
 
     <ImageView
+        android:id="@+id/button_creditos"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="550dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_creditos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_bookinfo" />
+
+    <ImageView
         android:id="@+id/button_salir"
         android:layout_width="100dp"
         android:layout_height="50dp"
@@ -53,7 +55,7 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/btn_exit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_galeria" />
+        app:layout_constraintTop_toBottomOf="@+id/button_creditos" />
 
 
 </android.support.constraint.ConstraintLayout>

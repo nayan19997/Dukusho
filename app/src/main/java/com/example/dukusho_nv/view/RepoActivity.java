@@ -27,6 +27,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.dukusho_nv.DukushoViewModel;
+import com.example.dukusho_nv.GlideApp;
 import com.example.dukusho_nv.LogInActivity;
 import com.example.dukusho_nv.R;
 import com.example.dukusho_nv.model.Book;
@@ -95,6 +96,23 @@ public class RepoActivity extends AppCompatActivity
                 libroListAdapter.notifyDataSetChanged();
             }
         });
+
+
+
+        navigationView.setNavigationItemSelectedListener(this);
+
+        /* Load user info in drawer header*/
+        View header = navigationView.getHeaderView(0);
+        ImageView photo = header.findViewById(R.id.userPhoto);
+        TextView name = header.findViewById(R.id.userName);
+        TextView email = header.findViewById(R.id.userEmail);
+
+        GlideApp.with(this)
+                .load(FirebaseAuth.getInstance().getCurrentUser().getPhotoUrl().toString())
+                .circleCrop()
+                .into(photo);
+        name.setText(FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
+        email.setText(FirebaseAuth.getInstance().getCurrentUser().getEmail());
 
 
 

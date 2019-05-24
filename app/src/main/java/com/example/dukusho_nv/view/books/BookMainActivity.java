@@ -1,14 +1,10 @@
 package com.example.dukusho_nv.view.books;
 
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -68,6 +64,27 @@ public class BookMainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.button_bookinfo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(BookMainActivity.this, BookInfoActivity.class);
+                intent.putExtra("BOOK_KEY", bookKey);
+                startActivity(intent);
+            }
+        });
+
+
+        findViewById(R.id.button_creditos).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(BookMainActivity.this, BookCreditsActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
         findViewById(R.id.button_salir).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,7 +94,6 @@ public class BookMainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
 
         Glide.with(BookMainActivity.this)

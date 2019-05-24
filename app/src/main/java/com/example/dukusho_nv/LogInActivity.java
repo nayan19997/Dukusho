@@ -67,11 +67,7 @@ public class LogInActivity extends AppCompatActivity {
                 AuthUI.getInstance()
                         .createSignInIntentBuilder()
                         .setAvailableProviders(Arrays.asList(
-                                new AuthUI.IdpConfig.GitHubBuilder().build(),
-                                new AuthUI.IdpConfig.GoogleBuilder().build(),
-
-//                                            new AuthUI.IdpConfig.TwitterBuilder().build(),
-                                new AuthUI.IdpConfig.FacebookBuilder().build()  ))
+                                new AuthUI.IdpConfig.GoogleBuilder().build()))
                         .build(),
 
                 RC_SIGN_IN);

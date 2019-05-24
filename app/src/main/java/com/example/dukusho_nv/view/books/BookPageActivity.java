@@ -27,7 +27,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class BookPageActivity extends AppCompatActivity {
-    ImageView fondopage;
+    ImageView fondopage,button_final;
     TextView pjname, textopage;
     int seg = 50;
     Button option1, option2, next,previous;
@@ -45,6 +45,8 @@ public class BookPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_page);
 
+
+        button_final = findViewById(R.id.button_final);
         fondopage = findViewById(R.id.fondopage);
         pjname = findViewById(R.id.namepj);
         textopage = findViewById(R.id.textopage);
@@ -113,6 +115,7 @@ public class BookPageActivity extends AppCompatActivity {
             if (pageNum == size) {
                 Toast.makeText(getApplicationContext(), "Libro finish", Toast.LENGTH_LONG).show();
                 finish();
+//                pageNum=0;
             }
         }
 
@@ -135,6 +138,9 @@ public class BookPageActivity extends AppCompatActivity {
         if(page == null) return;
 
 
+        Glide.with(BookPageActivity.this)
+                .load(page.image1)
+                .into(button_final);
         Glide.with(BookPageActivity.this)
                 .load(page.image)
                 .into(fondopage);
@@ -206,6 +212,26 @@ public class BookPageActivity extends AppCompatActivity {
             previous.setVisibility(View.INVISIBLE);
         }
 
+
+
+        if (size != 0) {
+            if (pageNum == size -1) {
+                next.setVisibility(View.INVISIBLE);
+                previous.setVisibility(View.INVISIBLE);
+                button_final.setVisibility(View.VISIBLE);
+            }
+        }
+
+        button_final.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+
+
+
 //
 //        button1.setText(page.option1.text);
 //        button1.setOnCLickListfs(onclick sta "PAGE_NUM", page.option1.dest)
@@ -233,17 +259,15 @@ public class BookPageActivity extends AppCompatActivity {
 
                 startActivity(intent);
                 finish();
-
             }
         });
 
 
-        fondopage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                seg = 10;
-            }
-        });
+
+
+
+
+
     }
 
     public void onWindowFocusChanged(boolean hasFocus) {
@@ -274,7 +298,7 @@ public class BookPageActivity extends AppCompatActivity {
 
 
     private void showSystemUI() {
-        int seg = 50;
+
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -315,6 +339,7 @@ public class BookPageActivity extends AppCompatActivity {
             }
         };
         timer.schedule(taskEverySplitSecond, 1, seg);
+
     }
 
 }

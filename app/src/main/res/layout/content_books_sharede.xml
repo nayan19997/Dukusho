@@ -4,11 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.BookSharedActivity">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.BookSharedActivity"
+    tools:showIn="@layout/app_bar_books_sharede">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/book_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

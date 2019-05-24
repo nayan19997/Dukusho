@@ -21,6 +21,8 @@
     <string name="firebase_web_host" translatable="false">project-id.firebaseapp.com</string>
     <string name="title_activity_repo">Dokusho</string>
     <string name="title_activity_my_books_actvity">Dokusho</string>
+    <string name="title_activity_add_repo">Dokusho</string>
+    <string name="title_activity_books_shared">Dokusho</string>
 
 
 </resources>

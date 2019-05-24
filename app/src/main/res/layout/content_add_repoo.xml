@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.AddRepoActivity"
     android:background="@drawable/fonde1"
-    tools:context=".view.AddRepoActivity">
+    tools:showIn="@layout/app_bar_add_repoo">
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -47,6 +49,5 @@
             android:background="@drawable/btn_addrepo" />
 
     </LinearLayout>
-
 
 </android.support.constraint.ConstraintLayout>
