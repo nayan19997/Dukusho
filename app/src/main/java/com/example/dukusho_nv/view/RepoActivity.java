@@ -31,6 +31,9 @@ import com.example.dukusho_nv.LogInActivity;
 import com.example.dukusho_nv.R;
 import com.example.dukusho_nv.model.Book;
 import com.example.dukusho_nv.model.Repo;
+import com.firebase.ui.auth.AuthUI;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -198,10 +201,14 @@ public class RepoActivity extends AppCompatActivity
             startActivity(new Intent(RepoActivity.this, MyBooksActivity.class));
 
         } else if (id == R.id.nav_cerrar_sesion) {
-
-//            startActivity(new Intent(RepoActivity.this, LogInActivity.class));
-
-
+            AuthUI.getInstance()
+                    .signOut(RepoActivity.this)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        public void onComplete(@NonNull Task<Void> task) {
+                            startActivity(new Intent(RepoActivity.this, LogInActivity.class));
+                            finish();
+                        }
+                    });
         } else if (id == R.id.nav_addurl) {
             startActivity(new Intent(RepoActivity.this, AddRepoActivity.class));
         }else if (id == R.id.nav_compartido) {

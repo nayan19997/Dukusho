@@ -25,11 +25,15 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.dukusho_nv.DukushoViewModel;
+import com.example.dukusho_nv.LogInActivity;
 import com.example.dukusho_nv.R;
 import com.example.dukusho_nv.model.Book;
 import com.example.dukusho_nv.view.books.BookMainActivity;
+import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -198,6 +202,17 @@ public class MyBooksActivity extends AppCompatActivity
 
         if (id == R.id.nav_repository) {
             startActivity(new Intent(MyBooksActivity.this, RepoActivity.class));
+
+        } else if (id == R.id.nav_cerrar_sesion) {
+                AuthUI.getInstance()
+                        .signOut(MyBooksActivity.this)
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            public void onComplete(@NonNull Task<Void> task) {
+                                startActivity(new Intent(MyBooksActivity.this, LogInActivity.class));
+                                finish();
+                            }
+                        });
+
 
         } else if (id == R.id.nav_addurl) {
             startActivity(new Intent(MyBooksActivity.this, AddRepoActivity.class));

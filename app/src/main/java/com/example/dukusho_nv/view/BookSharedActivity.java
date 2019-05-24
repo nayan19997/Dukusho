@@ -101,6 +101,9 @@ public class BookSharedActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Descargando...", Toast.LENGTH_SHORT).show();
 
                     Toast.makeText(getApplicationContext(), "DESCARGADO CORRECTAMENTE", Toast.LENGTH_SHORT).show();
+
+                    startActivity(new Intent(BookSharedActivity.this, MyBooksActivity.class));
+
                 }
             });
 
