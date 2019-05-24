@@ -41,6 +41,7 @@ public class PreShareActivity extends AppCompatActivity {
                 .load(book.portada)
                 .into(view);
 
+
         final EditText editText = findViewById(R.id.comentpreshare);
 
         findViewById(R.id.compartir).setOnClickListener(new View.OnClickListener() {

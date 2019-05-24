@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.NonNull;
+import android.support.v4.widget.CircularProgressDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.dukusho_nv.GlideApp;
 import com.example.dukusho_nv.R;
 import com.example.dukusho_nv.model.Page;
 import com.google.firebase.auth.FirebaseAuth;
@@ -40,6 +42,8 @@ public class BookPageActivity extends AppCompatActivity {
     static long size;
     String bookKey;
 
+    CircularProgressDrawable circularProgressDrawable;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +58,10 @@ public class BookPageActivity extends AppCompatActivity {
         previous = findViewById(R.id.button_previous);
         option1 = findViewById(R.id.btn_option1);
         option2 = findViewById(R.id.btn_option2);
+        circularProgressDrawable = new CircularProgressDrawable(this);
+        circularProgressDrawable.setStrokeWidth(5f);
+        circularProgressDrawable.setCenterRadius(30f);
+        circularProgressDrawable.start();
 
 
 
@@ -141,9 +149,12 @@ public class BookPageActivity extends AppCompatActivity {
         Glide.with(BookPageActivity.this)
                 .load(page.image1)
                 .into(button_final);
-        Glide.with(BookPageActivity.this)
+
+        GlideApp.with(BookPageActivity.this)
                 .load(page.image)
+                .placeholder(circularProgressDrawable)
                 .into(fondopage);
+
         setSlowlyText(page.text);
         pjname.setText(page.pjname);
 

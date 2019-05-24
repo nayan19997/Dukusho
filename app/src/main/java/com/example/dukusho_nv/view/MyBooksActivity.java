@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
+import android.support.v4.widget.CircularProgressDrawable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -46,6 +47,7 @@ public class MyBooksActivity extends AppCompatActivity
     DukushoViewModel dukushoViewModel;
     private DatabaseReference mRef;
     private String uid;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -115,7 +117,10 @@ public class MyBooksActivity extends AppCompatActivity
         @Override
         protected void onBindViewHolder(@NonNull final BookViewHolder bookViewHolder, final int position, @NonNull final Book book) {
             bookViewHolder.title.setText(book.title);
-            Glide.with(MyBooksActivity.this).load(book.portada).into(bookViewHolder.portada);
+            GlideApp.with(MyBooksActivity.this)
+                    .load(book.portada)
+                    .centerCrop()
+                    .into(bookViewHolder.portada);
 
             bookViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -142,13 +147,10 @@ public class MyBooksActivity extends AppCompatActivity
                                     libroListAdapter.notifyItemRangeChanged(position, libroListAdapter.getItemCount());
                                     mRef.child(uid).child(getRef(position).getKey()).removeValue();
                                     break;
-
                                 case 1:
                                     Intent intent = new Intent(MyBooksActivity.this, PreShareActivity.class);
                                     intent.putExtra("Libro", book);
                                     startActivity(intent);
-
-
                                     break;
                                 default:
                                     break;

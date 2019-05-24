@@ -73,7 +73,7 @@ public class BookInfoActivity extends AppCompatActivity {
                 .load(book.imgpj)
                 .into(imgpj);
 
-        titlebook.setText(book.title);
+        titlebook.setText("Title:"+book.title);
         authorname.setText(book.author);
         volumen.setText(book.volumen);
         pagina.setText(book.pagina);
