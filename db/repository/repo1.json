@@ -11,16 +11,40 @@
           "id": "0",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
           "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         },
-
         {
           "id": "1",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
+          "text": "Que haras ir al insti o hacer campana ",
+          "pjname": "Claw",
+          "option1": {
+            "dest": "2",
+            "text": "Ir al insti :c"
+          },
+          "option2": {
+            "dest": "3",
+            "text": "Irme a pasarmelo bien :D"
+          }
+        },
+        {
+          "id": "2",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
+          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
+          "pjname": "Claw"
+        },
+        {
+          "id": "3",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
+          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
+          "pjname": "Claw"
+        },
+        {
+          "id": "4",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
           "text": "funciona",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         }
-
       ]
     },
 
@@ -35,16 +59,40 @@
           "id": "0",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
           "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         },
-
         {
           "id": "1",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
+          "text": "Que haras ir al insti o hacer campana ",
+          "pjname": "Claw",
+          "option1": {
+            "dest": "2",
+            "text": "Ir al insti :c"
+          },
+          "option2": {
+            "dest": "3",
+            "text": "Irme a pasarmelo bien :D"
+          }
+        },
+        {
+          "id": "2",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
+          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
+          "pjname": "Claw"
+        },
+        {
+          "id": "3",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
+          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
+          "pjname": "Claw"
+        },
+        {
+          "id": "4",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
           "text": "funciona",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         }
-
       ]
     },
 
@@ -59,16 +107,40 @@
           "id": "0",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
           "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         },
-
         {
           "id": "1",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
+          "text": "Que haras ir al insti o hacer campana ",
+          "pjname": "Claw",
+          "option1": {
+            "dest": "2",
+            "text": "Ir al insti :c"
+          },
+          "option2": {
+            "dest": "3",
+            "text": "Irme a pasarmelo bien :D"
+          }
+        },
+        {
+          "id": "2",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
+          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
+          "pjname": "Claw"
+        },
+        {
+          "id": "3",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
+          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
+          "pjname": "Claw"
+        },
+        {
+          "id": "4",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
           "text": "funciona",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         }
-
       ]
     },
 
@@ -83,16 +155,40 @@
           "id": "0",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
           "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         },
-
         {
           "id": "1",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
+          "text": "Que haras ir al insti o hacer campana ",
+          "pjname": "Claw",
+          "option1": {
+            "dest": "2",
+            "text": "Ir al insti :c"
+          },
+          "option2": {
+            "dest": "3",
+            "text": "Irme a pasarmelo bien :D"
+          }
+        },
+        {
+          "id": "2",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
+          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
+          "pjname": "Claw"
+        },
+        {
+          "id": "3",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
+          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
+          "pjname": "Claw"
+        },
+        {
+          "id": "4",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
           "text": "funciona",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         }
-
       ]
     },
 
@@ -107,16 +203,40 @@
           "id": "0",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
           "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         },
-
         {
           "id": "1",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
+          "text": "Que haras ir al insti o hacer campana ",
+          "pjname": "Claw",
+          "option1": {
+            "dest": "2",
+            "text": "Ir al insti :c"
+          },
+          "option2": {
+            "dest": "3",
+            "text": "Irme a pasarmelo bien :D"
+          }
+        },
+        {
+          "id": "2",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
+          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
+          "pjname": "Claw"
+        },
+        {
+          "id": "3",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
+          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
+          "pjname": "Claw"
+        },
+        {
+          "id": "4",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
           "text": "funciona",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         }
-
       ]
     },
 
@@ -131,16 +251,40 @@
           "id": "0",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
           "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         },
-
         {
           "id": "1",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
+          "text": "Que haras ir al insti o hacer campana ",
+          "pjname": "Claw",
+          "option1": {
+            "dest": "2",
+            "text": "Ir al insti :c"
+          },
+          "option2": {
+            "dest": "3",
+            "text": "Irme a pasarmelo bien :D"
+          }
+        },
+        {
+          "id": "2",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
+          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
+          "pjname": "Claw"
+        },
+        {
+          "id": "3",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
+          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
+          "pjname": "Claw"
+        },
+        {
+          "id": "4",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
           "text": "funciona",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         }
-
       ]
     },
 
@@ -155,16 +299,40 @@
           "id": "0",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
           "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         },
-
         {
           "id": "1",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
+          "text": "Que haras ir al insti o hacer campana ",
+          "pjname": "Claw",
+          "option1": {
+            "dest": "2",
+            "text": "Ir al insti :c"
+          },
+          "option2": {
+            "dest": "3",
+            "text": "Irme a pasarmelo bien :D"
+          }
+        },
+        {
+          "id": "2",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
+          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
+          "pjname": "Claw"
+        },
+        {
+          "id": "3",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
+          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
+          "pjname": "Claw"
+        },
+        {
+          "id": "4",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
           "text": "funciona",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         }
-
       ]
     },
 
@@ -179,16 +347,40 @@
           "id": "0",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
           "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         },
-
         {
           "id": "1",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
+          "text": "Que haras ir al insti o hacer campana ",
+          "pjname": "Claw",
+          "option1": {
+            "dest": "2",
+            "text": "Ir al insti :c"
+          },
+          "option2": {
+            "dest": "3",
+            "text": "Irme a pasarmelo bien :D"
+          }
+        },
+        {
+          "id": "2",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
+          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
+          "pjname": "Claw"
+        },
+        {
+          "id": "3",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
+          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
+          "pjname": "Claw"
+        },
+        {
+          "id": "4",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
           "text": "funciona",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         }
-
       ]
     },
 
@@ -203,16 +395,40 @@
           "id": "0",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
           "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         },
-
         {
           "id": "1",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
+          "text": "Que haras ir al insti o hacer campana ",
+          "pjname": "Claw",
+          "option1": {
+            "dest": "2",
+            "text": "Ir al insti :c"
+          },
+          "option2": {
+            "dest": "3",
+            "text": "Irme a pasarmelo bien :D"
+          }
+        },
+        {
+          "id": "2",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
+          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
+          "pjname": "Claw"
+        },
+        {
+          "id": "3",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
+          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
+          "pjname": "Claw"
+        },
+        {
+          "id": "4",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
           "text": "funciona",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         }
-
       ]
     },
 
@@ -227,16 +443,40 @@
           "id": "0",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
           "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         },
-
         {
           "id": "1",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
+          "text": "Que haras ir al insti o hacer campana ",
+          "pjname": "Claw",
+          "option1": {
+            "dest": "2",
+            "text": "Ir al insti :c"
+          },
+          "option2": {
+            "dest": "3",
+            "text": "Irme a pasarmelo bien :D"
+          }
+        },
+        {
+          "id": "2",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
+          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
+          "pjname": "Claw"
+        },
+        {
+          "id": "3",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
+          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
+          "pjname": "Claw"
+        },
+        {
+          "id": "4",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
           "text": "funciona",
-          "pjname" : "Claw"
+          "pjname": "Claw"
         }
-
       ]
     }
   ]
