@@ -36,6 +36,9 @@ public class PreShareActivity extends AppCompatActivity {
 
         TextView tv = findViewById(R.id.titlepreshare);
         tv.setText(book.title);
+        TextView tv1 = findViewById(R.id.authorname);
+        tv1.setText(book.author);
+
         ImageView view =  findViewById(R.id.imgpreshare);
         Glide.with(PreShareActivity.this)
                 .load(book.portada)
