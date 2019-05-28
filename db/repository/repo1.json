@@ -1,481 +1,94 @@
 {
   "books": [
-    {
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/portada/portada1.jpg",
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
-      "title": "Garo",
-      "author": "claw",
+   {
+      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Portada.jpg",
+      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Main.png",
+      "title": "League of laugh",
+      "author": "Kuroha",
       "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
-      "pages": [
-        {
-          "id": "0",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
-          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname": "Claw"
-        },
-        {
-          "id": "1",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
-          "text": "Que haras ir al insti o hacer campana ",
-          "pjname": "Claw",
-          "option1": {
-            "dest": "2",
-            "text": "Ir al insti :c"
-          },
-          "option2": {
-            "dest": "3",
-            "text": "Irme a pasarmelo bien :D"
-          }
-        },
-        {
-          "id": "2",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
-          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
-          "pjname": "Claw"
-        },
-        {
-          "id": "3",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
-          "pjname": "Claw"
-        },
-        {
-          "id": "4",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "funciona",
-          "pjname": "Claw"
-        }
-      ]
-    },
 
-    {
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/portada/portada2.jpg",
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
-      "title": "Fate Grand Order",
-      "author": "claw",
-      "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
-      "pages": [
-        {
-          "id": "0",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
-          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname": "Claw"
-        },
-        {
-          "id": "1",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
-          "text": "Que haras ir al insti o hacer campana ",
-          "pjname": "Claw",
-          "option1": {
-            "dest": "2",
-            "text": "Ir al insti :c"
-          },
-          "option2": {
-            "dest": "3",
-            "text": "Irme a pasarmelo bien :D"
-          }
-        },
-        {
-          "id": "2",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
-          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
-          "pjname": "Claw"
-        },
-        {
-          "id": "3",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
-          "pjname": "Claw"
-        },
-        {
-          "id": "4",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "funciona",
-          "pjname": "Claw"
-        }
-      ]
-    },
+      "sinopsis":"alkjshdlkajhsdlkjhasdlkjahsdlkjh" ,
+      "volumen":"1",
+      "pagina":"11",
+      "estado": "Finalizado",
+      "fechadelanzamiento": "20/05/2019",
+      "imgpj": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/garen.png",
 
-    {
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/portada/portada3.jpg",
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
-      "title": "Pistol",
-      "author": "claw",
-      "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
       "pages": [
         {
-          "id": "0",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
-          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname": "Claw"
+        "id": "0",
+        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_1.png",
+        "text": "Bienvenidos a la grieta del invocador! Este es un sitio donde las diferentes especies de todas regiones se reúnen para combatir en una batalla donde solo 1 equipo puede ser el ganador. ¿Estás preparado para enfrentarte en la batalla? recuerda que solo 1 equipo alcanzará la victoria… El otro… será olvidado completamente y arderá en la miseria… MUAJAJAJA. ,,,",
+        "pjname": "Lux"
         },
         {
-          "id": "1",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
-          "text": "Que haras ir al insti o hacer campana ",
-          "pjname": "Claw",
-          "option1": {
-            "dest": "2",
-            "text": "Ir al insti :c"
-          },
-          "option2": {
-            "dest": "3",
-            "text": "Irme a pasarmelo bien :D"
-          }
+        "id": "1",
+        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_2.png",
+        "text": "Nah, solo bromeo, somos muy amigables entre nosotros y en verdad la victoria tampoco hace que unos sean mejores que otros, nos gusta pasarlo bien después de haberlo dado todo como equipo. \nMi nombre es Lux y este es mi hermano Garen, estamos reclutando a invocadores para que puedan participar en nuestro equipo. Este es un juego de 5 contra 5, donde puedes elegir qué clase quieres ser y contra quién quieres pegarte.\n  ",
+        "pjname": "Lux"
         },
         {
-          "id": "2",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
-          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
-          "pjname": "Claw"
+        "id": "2",
+        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_3.png",
+        "text": "Me parece que eres un poco callado, ¿todo bien? supongo que la gente suele asustarse un poco cuando me presento. Bueno, si te unes a nuestro equipo lo daremos todo para que un novato como tú pueda disfrutar de su primera victoria en este juego. ¿Qué te parece, quieres unirte a nosotros y combatir en la mayor batalla de tu vida?",
+        "pjname": "Lux"
         },
         {
-          "id": "3",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
-          "pjname": "Claw"
+        "id": "3",
+        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagenoption.jpg",
+        "text": "Aceptar --> Unirse al equipo a pesar de que esta chica tiene cara de loca y no te fias ni un pelo de lo que dice, además de que su hermano te da miedo porque tiene cara de que si te rindes te cortará la cabeza por traidor y por haber fallado al equipo (POR DEMAAAACIA!!).\n Rechazar --> Rechazar la oferta de poder ser el “primer novato” que ganó su primera batalla en este juego cuando nunca antes habías jugado. Sin embargo, ese tal Garen da un poco de miedo y respeto, si rechazas la oferta seguro te juzga de traidor.",
+        "pjname": "Lux",
+        "option1": {
+        "dest": "4",
+        "text": "Aceptar"
         },
-        {
-          "id": "4",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "funciona",
-          "pjname": "Claw"
+        "option2": {
+        "dest": "5",
+        "text": "Rechazar"
         }
-      ]
-    },
-
-    {
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/portada/portada4.jpg",
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
-      "title": "Loli",
-      "author": "claw",
-      "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
-      "pages": [
-        {
-          "id": "0",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
-          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname": "Claw"
         },
         {
-          "id": "1",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
-          "text": "Que haras ir al insti o hacer campana ",
-          "pjname": "Claw",
-          "option1": {
-            "dest": "2",
-            "text": "Ir al insti :c"
-          },
-          "option2": {
-            "dest": "3",
-            "text": "Irme a pasarmelo bien :D"
-          }
+        "id": "4",
+        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_4.jpg",
+        "text": "Hola novato, me parece correcto que hayas decidido unirte a nuestro equipo. Nosotros pertenecemos a la región de Demacia, donde desde hace años que estamos en guerra con otra región llamada Noxus, no nos falles. No puedo permitir que Demacia pierda miles de años en guerra por un novato como tú. POR DEMAACIAA!\n",
+        "pjname": "Garen"
         },
         {
-          "id": "2",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
-          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
-          "pjname": "Claw"
+        "id": "5",
+        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_5.jpg",
+        "text": "¿Así que has decidido rechazar la oferta de estar en el mejor equipo del mundo entero? Ya veo… Nosotros pertenecemos a la región de Demacia, donde desde hace años que estamos en guerra con otra región llamada Noxus. Igualmente, no estaría mal que al menos practicaras con nosotros por si en algún momento quieres unirte a algún otro equipo y luchar.  Nunca se sabe cuando un novato como tú prefiera unirse a la región de Noxus… POR DEMAACIAA!, ¿No tienes pensado unirte a Noxus… Verdad?\n",
+        "pjname": "Garen"
         },
         {
-          "id": "3",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
-          "pjname": "Claw"
+        "id": "6",
+        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_6.png",
+        "text": "Te haré una breve presentación de los equipos, estas son las personas con las que nos enfrentamos.\n",
+        "pjname": "Garen"
         },
         {
-          "id": "4",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "funciona",
-          "pjname": "Claw"
-        }
-      ]
-    },
-
-    {
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/portada/portada5.jpg",
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
-      "title": "Code Geass",
-      "author": "claw",
-      "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
-      "pages": [
-        {
-          "id": "0",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
-          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname": "Claw"
+        "id": "7",
+        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_7.png",
+        "text": "Ese es contra el que tienes que luchar.\n",
+        "pjname": "Garen"
         },
         {
-          "id": "1",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
-          "text": "Que haras ir al insti o hacer campana ",
-          "pjname": "Claw",
-          "option1": {
-            "dest": "2",
-            "text": "Ir al insti :c"
-          },
-          "option2": {
-            "dest": "3",
-            "text": "Irme a pasarmelo bien :D"
-          }
+        "id": "8",
+        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_8.jpg",
+        "text": "Y este eres tú… \n",
+        "pjname": "Garen"
         },
         {
-          "id": "2",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
-          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
-          "pjname": "Claw"
+        "id": "9",
+        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_9.png",
+        "text": "Espero que te diviertas y lo pases bien! No nos defraudes :D .\n",
+        "pjname": "Garen"
         },
         {
-          "id": "3",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
-          "pjname": "Claw"
-        },
-        {
-          "id": "4",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "funciona",
-          "pjname": "Claw"
-        }
-      ]
-    },
-
-    {
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/portada/portada6.jpg",
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
-      "title": "Lolimore",
-      "author": "claw",
-      "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
-      "pages": [
-        {
-          "id": "0",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
-          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname": "Claw"
-        },
-        {
-          "id": "1",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
-          "text": "Que haras ir al insti o hacer campana ",
-          "pjname": "Claw",
-          "option1": {
-            "dest": "2",
-            "text": "Ir al insti :c"
-          },
-          "option2": {
-            "dest": "3",
-            "text": "Irme a pasarmelo bien :D"
-          }
-        },
-        {
-          "id": "2",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
-          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
-          "pjname": "Claw"
-        },
-        {
-          "id": "3",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
-          "pjname": "Claw"
-        },
-        {
-          "id": "4",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "funciona",
-          "pjname": "Claw"
-        }
-      ]
-    },
-
-    {
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/portada/portada7.jpg",
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
-      "title": "Loli con atributos",
-      "author": "claw",
-      "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
-      "pages": [
-        {
-          "id": "0",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
-          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname": "Claw"
-        },
-        {
-          "id": "1",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
-          "text": "Que haras ir al insti o hacer campana ",
-          "pjname": "Claw",
-          "option1": {
-            "dest": "2",
-            "text": "Ir al insti :c"
-          },
-          "option2": {
-            "dest": "3",
-            "text": "Irme a pasarmelo bien :D"
-          }
-        },
-        {
-          "id": "2",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
-          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
-          "pjname": "Claw"
-        },
-        {
-          "id": "3",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
-          "pjname": "Claw"
-        },
-        {
-          "id": "4",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "funciona",
-          "pjname": "Claw"
-        }
-      ]
-    },
-
-    {
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/portada/portada8.jpg",
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
-      "title": "Sao temp 3",
-      "author": "claw",
-      "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
-      "pages": [
-        {
-          "id": "0",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
-          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname": "Claw"
-        },
-        {
-          "id": "1",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
-          "text": "Que haras ir al insti o hacer campana ",
-          "pjname": "Claw",
-          "option1": {
-            "dest": "2",
-            "text": "Ir al insti :c"
-          },
-          "option2": {
-            "dest": "3",
-            "text": "Irme a pasarmelo bien :D"
-          }
-        },
-        {
-          "id": "2",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
-          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
-          "pjname": "Claw"
-        },
-        {
-          "id": "3",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
-          "pjname": "Claw"
-        },
-        {
-          "id": "4",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "funciona",
-          "pjname": "Claw"
-        }
-      ]
-    },
-
-    {
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/portada/portada9.jpg",
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
-      "title": "Saber after",
-      "author": "claw",
-      "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
-      "pages": [
-        {
-          "id": "0",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
-          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname": "Claw"
-        },
-        {
-          "id": "1",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
-          "text": "Que haras ir al insti o hacer campana ",
-          "pjname": "Claw",
-          "option1": {
-            "dest": "2",
-            "text": "Ir al insti :c"
-          },
-          "option2": {
-            "dest": "3",
-            "text": "Irme a pasarmelo bien :D"
-          }
-        },
-        {
-          "id": "2",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
-          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
-          "pjname": "Claw"
-        },
-        {
-          "id": "3",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
-          "pjname": "Claw"
-        },
-        {
-          "id": "4",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "funciona",
-          "pjname": "Claw"
-        }
-      ]
-    },
-
-    {
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/portada/portada10.jpg",
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
-      "title": "Naruto",
-      "author": "claw",
-      "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
-      "pages": [
-        {
-          "id": "0",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
-          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
-          "pjname": "Claw"
-        },
-        {
-          "id": "1",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
-          "text": "Que haras ir al insti o hacer campana ",
-          "pjname": "Claw",
-          "option1": {
-            "dest": "2",
-            "text": "Ir al insti :c"
-          },
-          "option2": {
-            "dest": "3",
-            "text": "Irme a pasarmelo bien :D"
-          }
-        },
-        {
-          "id": "2",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
-          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
-          "pjname": "Claw"
-        },
-        {
-          "id": "3",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
-          "pjname": "Claw"
-        },
-        {
-          "id": "4",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "funciona",
-          "pjname": "Claw"
+        "id": "10",
+        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/final.jpg",
+        "image1": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/final1.png",
+        "text": "Espero que te diviertas y lo pases bien! No nos defraudes :D .\n",
+        "pjname": "Garen"
         }
       ]
     }
