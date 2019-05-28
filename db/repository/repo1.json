@@ -46,50 +46,6 @@
         "dest": "5",
         "text": "Rechazar"
         }
-        },
-        {
-        "id": "4",
-        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_4.jpg",
-        "text": "Hola novato, me parece correcto que hayas decidido unirte a nuestro equipo. Nosotros pertenecemos a la región de Demacia, donde desde hace años que estamos en guerra con otra región llamada Noxus, no nos falles. No puedo permitir que Demacia pierda miles de años en guerra por un novato como tú. POR DEMAACIAA!\n",
-        "pjname": "Garen"
-        },
-        {
-        "id": "5",
-        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_5.jpg",
-        "text": "¿Así que has decidido rechazar la oferta de estar en el mejor equipo del mundo entero? Ya veo… Nosotros pertenecemos a la región de Demacia, donde desde hace años que estamos en guerra con otra región llamada Noxus. Igualmente, no estaría mal que al menos practicaras con nosotros por si en algún momento quieres unirte a algún otro equipo y luchar.  Nunca se sabe cuando un novato como tú prefiera unirse a la región de Noxus… POR DEMAACIAA!, ¿No tienes pensado unirte a Noxus… Verdad?\n",
-        "pjname": "Garen"
-        },
-        {
-        "id": "6",
-        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_6.png",
-        "text": "Te haré una breve presentación de los equipos, estas son las personas con las que nos enfrentamos.\n",
-        "pjname": "Garen"
-        },
-        {
-        "id": "7",
-        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_7.png",
-        "text": "Ese es contra el que tienes que luchar.\n",
-        "pjname": "Garen"
-        },
-        {
-        "id": "8",
-        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_8.jpg",
-        "text": "Y este eres tú… \n",
-        "pjname": "Garen"
-        },
-        {
-        "id": "9",
-        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Imagen_9.png",
-        "text": "Espero que te diviertas y lo pases bien! No nos defraudes :D .\n",
-        "pjname": "Garen"
-        },
-        {
-        "id": "10",
-        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/final.jpg",
-        "image1": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/final1.png",
-        "text": "Espero que te diviertas y lo pases bien! No nos defraudes :D .\n",
-        "pjname": "Garen"
-        }
       ]
     }
   ]
