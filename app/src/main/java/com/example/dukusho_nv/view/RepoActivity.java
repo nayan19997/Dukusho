@@ -59,12 +59,13 @@ public class RepoActivity extends AppCompatActivity
 
         final String repoUrl;
         addulr = getIntent().getStringExtra("ADDREPO");
-            if (addulr == null){
-                repoUrl = url;
-            }else{
-                repoUrl = addulr;
-            }
+        if (addulr == null){
+            repoUrl = url;
+        }else{
+            repoUrl = addulr;
+        }
 
+        System.out.println("ABCD -> repoURL -> " + repoUrl);
 
         setContentView(R.layout.activity_repo);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -97,8 +98,6 @@ public class RepoActivity extends AppCompatActivity
             }
         });
 
-
-
         navigationView.setNavigationItemSelectedListener(this);
 
         /* Load user info in drawer header*/
@@ -113,8 +112,6 @@ public class RepoActivity extends AppCompatActivity
                 .into(photo);
         name.setText(FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
         email.setText(FirebaseAuth.getInstance().getCurrentUser().getEmail());
-
-
 
     }
 
@@ -228,7 +225,10 @@ public class RepoActivity extends AppCompatActivity
                         }
                     });
         } else if (id == R.id.nav_addurl) {
-            startActivity(new Intent(RepoActivity.this, AddRepoActivity.class));
+            Intent intent = new Intent(RepoActivity.this, AddRepoActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+
         }else if (id == R.id.nav_compartido) {
             startActivity(new Intent(RepoActivity.this, BookSharedActivity.class));
         }

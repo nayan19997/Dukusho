@@ -18,11 +18,9 @@ import retrofit2.Response;
 
 public class DukushoRepository {
     DukushoAPI dukushoAPI;
-//    DukushoDao dukushoDao;
 
     public DukushoRepository(Application application){
         dukushoAPI = DukushoApiModule.getAPI();
-//        dukushoDao = DukushoDatabase.getDatabase(application).dukushoDao();
     }
 
     public LiveData<Repo> downloadRepo(String url){
@@ -31,7 +29,6 @@ public class DukushoRepository {
         dukushoAPI.getRepository(url).enqueue(new Callback<Repo>() {
             @Override
             public void onResponse(Call<Repo> call, Response<Repo> response) {
-
                 repo.setValue(response.body());
             }
 

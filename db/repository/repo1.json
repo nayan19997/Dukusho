@@ -193,7 +193,7 @@
     },
 
     {
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/portada/portada5.jpg",
+        "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/portada/portada5.jpg",
       "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
       "title": "Code Geass",
       "author": "claw",

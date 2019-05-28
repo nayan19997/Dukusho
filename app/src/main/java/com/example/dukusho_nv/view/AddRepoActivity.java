@@ -34,6 +34,18 @@ public class AddRepoActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_repoo);
+
+        eturl= findViewById(R.id.et_url);
+
+        findViewById(R.id.add_repo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddRepoActivity.this, RepoActivity.class);
+                intent.putExtra("ADDREPO",  eturl.getText().toString());
+                startActivity(intent);
+            }
+        });
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -46,18 +58,6 @@ public class AddRepoActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
-
-        eturl= findViewById(R.id.et_url);
-
-        findViewById(R.id.add_repo).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AddRepoActivity.this, RepoActivity.class);
-                intent.putExtra("ADDREPO",  eturl.getText().toString());
-                startActivity(intent);
-
-            }
-        });
 
 
 

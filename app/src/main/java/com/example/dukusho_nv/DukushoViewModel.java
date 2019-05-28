@@ -22,11 +22,4 @@ public class DukushoViewModel extends AndroidViewModel {
         return dukushoRepository.downloadRepo(url);
     }
 
-//    public void insert(Book book){
-//        dukushoRepository.insertBook(book);
-//    }
-//
-//    public LiveData<List<Book>> selectAllBooks(){ return dukushoRepository.selectAllBooks(); }
-//
-//    public LiveData<Book> selectBook(int id){ return dukushoRepository.selectBook(id); }
 }
