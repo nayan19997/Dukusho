@@ -231,6 +231,15 @@ public class BookPageActivity extends AppCompatActivity {
             previous.setVisibility(View.INVISIBLE);
         }
 
+        if (page.text .equals("null")){
+            cajatexto.setVisibility(View.INVISIBLE);
+
+
+        }
+
+        System.out.println("ABCD -> texto " + page.text);
+
+
 
 
         if (size != 0) {

@@ -17,11 +17,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
+
+
     <LinearLayout
         android:id="@+id/cajatexto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_margin="10dp"
         android:background="#A8000000"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="@+id/fondopage"
@@ -35,8 +37,8 @@
             android:id="@+id/namepj"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#FFFFFF"
             android:layout_marginLeft="16dp"
+            android:textColor="#FFFFFF"
             android:textSize="20dp" />
 
 
@@ -44,23 +46,14 @@
             android:id="@+id/textopage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text=""
             android:layout_margin="16dp"
+            android:text=""
             android:textColor="#FFFFFF"
             android:textSize="18dp" />
 
     </LinearLayout>
 
 
-    <Button
-        android:id="@+id/button_next"
-        android:layout_width="57dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/next"
-        app:layout_constraintEnd_toEndOf="@+id/fondopage"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/btn_volverleer"
@@ -91,19 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_volverleer"
         app:layout_constraintVertical_bias="0.233" />
 
-    <Button
-        android:id="@+id/button_previous"
-        android:layout_width="57dp"
-        android:layout_height="56dp"
 
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="156dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/previus"
-        app:layout_constraintEnd_toStartOf="@+id/button_next"
-        app:layout_constraintHorizontal_bias="0.01"
-        app:layout_constraintStart_toStartOf="@+id/fondopage"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
@@ -134,6 +115,31 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/fondopage"
         app:layout_constraintTop_toBottomOf="@+id/btn_option1" />
+
+
+    <Button
+        android:id="@+id/button_previous"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/previus"
+        app:layout_constraintEnd_toStartOf="@+id/button_next"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="@+id/fondopage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/next"
+        app:layout_constraintEnd_toEndOf="@+id/fondopage"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

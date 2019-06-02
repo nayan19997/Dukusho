@@ -41,8 +41,8 @@ public class AddRepoActivity extends AppCompatActivity
         repository3="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoalien.json";
         repository4="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repocomic.json";
         repository5="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoprincess.json";
-        repository6="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repodokusho.json";
-        repository7="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repokurohaneko.json";
+        repository6="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repodiabolic.json";
+        repository7="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repo1.json";
 
         eturl= findViewById(R.id.et_url);
 
