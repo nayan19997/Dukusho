@@ -6,7 +6,7 @@
       "title": "Another",
       "author": "claw",
       "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
-      "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelainteractiva.png",
+      "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelavisual.png",
       "sinopsis": "alkjshdlkajhsdlkjhasdlkjahsdlkjh",
       "volumen": "1",
       "pagina": "11",
@@ -68,7 +68,7 @@
       "title": "Kaneki",
       "author": "claw",
       "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
-      "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelainteractiva.png",
+      "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelavisual.png",
       "sinopsis": "alkjshdlkajhsdlkjhasdlkjahsdlkjh",
       "volumen": "1",
       "pagina": "11",
@@ -192,7 +192,7 @@
       "title": "Death note",
       "author": "claw",
       "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
-      "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelainteractiva.png",
+      "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelavisual.png",
       "sinopsis": "alkjshdlkajhsdlkjhasdlkjahsdlkjh",
       "volumen": "1",
       "pagina": "11",
@@ -241,8 +241,6 @@
         }
       ]
     }
-
-
 
   ]
 }
