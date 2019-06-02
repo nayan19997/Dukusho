@@ -1,58 +1,62 @@
 {
   "books": [
     {
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/alien/portada1.jpg",
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
-      "title": "One punch man",
+      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/portada.PNG",
+      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/cover.jpg",
+      "title": "SAO volumen1:aincrad",
       "author": "claw",
       "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
-      "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelainteractiva.png",
-      "sinopsis": "alkjshdlkajhsdlkjhasdlkjahsdlkjh",
+      "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelavisual.png",
+      "sinopsis": "Un enorme castillo de piedra y acero esta flotando en un cielo infinito.\nEsto era todo lo que este mundo fuese.\nLes llevó a un caprichoso grupo de artesanos cerca de un mes examinar el\nlugar, el diámetro de la base era de unos 10 kilómetros - lo suficientemente\ngrande como para fácilmente acomodar Setagaya1",
       "volumen": "1",
       "pagina": "11",
-      "estado": "Finalizado",
-      "fechadelanzamiento": "20/05/2019",
+      "estado": "En emision",
+      "fechadelanzamiento": "30/05/2019",
       "imgpj": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/garen.png",
 
       "pages": [
         {
           "id": "0",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
-          "text": "Tienes que ir al insti pero no tienes muchas ganas, y ves una tienda de juegos y vas hacia ahi",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen1.jpg",
+          "text": "null",
           "pjname": "Claw"
         },
+
         {
           "id": "1",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
-          "text": "Que haras ir al insti o hacer campana ",
-          "pjname": "Claw",
-          "option1": {
-            "dest": "2",
-            "text": "Ir al insti :c"
-          },
-          "option2": {
-            "dest": "3",
-            "text": "Irme a pasarmelo bien :D"
-          }
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen2.jpg",
+          "text": "null",
+          "pjname": "Claw"
         },
+
         {
           "id": "2",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
-          "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen3.jpg",
+          "text": "null",
           "pjname": "Claw"
         },
+
         {
           "id": "3",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
-          "pjname": "Claw"
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen3.jpg",
+          "text": "Cuando la anticipación y la ansiedad llegaron a su límite, el primer\nVRMMORPG fue anunciado justo a tiempo, “Sword Art Online”. El escenario\npara el juego es un castillo flotante que consta de 100 pisos.",
+          "pjname": "Kirigaya Kazuto"
         },
+
         {
           "id": "4",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
-          "text": "funciona",
-          "pjname": "Claw"
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen3.jpg",
+          "text": "Los jugadores viven en un mundo con bosques y lagos, contando con sólo su\nespada y la unidad para descubrir la ruta hacia los pisos superiores y derrotar a\nun sinnúmero de monstruos y hacer su camino hacia la cima sin fin.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "5",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen3.jpg",
+          "text": "Cuando la anticipación y la ansiedad llegaron a su límite, el primer\nVRMMORPG fue anunciado justo a tiempo, “Sword Art Online”. El escenario\npara el juego es un castillo flotante que consta de 100 pisos.",
+          "pjname": "Kirigaya Kazuto"
         }
+
       ]
     }
 
