@@ -24,6 +24,7 @@ public class BookMainActivity extends AppCompatActivity {
     private DukushoViewModel dukushoViewModel;
     private DatabaseReference mRef;
     private String uid;
+
     ImageView imageViewfondo;
 
     String bookKey;
@@ -51,6 +52,12 @@ public class BookMainActivity extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) { }
         });
+
+
+
+
+
+
     }
 
     void showBook(final Book book){

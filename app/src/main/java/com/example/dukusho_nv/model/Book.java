@@ -10,6 +10,7 @@ public class Book  implements Serializable {
   public String cover;
   public String portada;
   public String author;
+  public String tipo;
   public String username;
   public String userimg;
   public String coment;

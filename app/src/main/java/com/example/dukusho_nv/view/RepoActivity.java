@@ -131,7 +131,15 @@ public class RepoActivity extends AppCompatActivity
             final Book book = bookList.get(i);
 
             bookViewHolder.title.setText(book.title);
-            Glide.with(RepoActivity.this).load(book.portada).into(bookViewHolder.portada);
+
+            GlideApp.with(RepoActivity.this)
+                    .load(book.portada)
+                    .centerCrop()
+                    .into(bookViewHolder.portada);
+
+            GlideApp.with(RepoActivity.this)
+                    .load(book.tipo)
+                    .into(bookViewHolder.tipo);
 
             bookViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -139,7 +147,10 @@ public class RepoActivity extends AppCompatActivity
 
                     mRef.child(uid).push().setValue(book);
 
-                    Glide.with(RepoActivity.this).load(book.descargado).into(bookViewHolder.portadaDescarga);
+                    GlideApp.with(RepoActivity.this)
+                            .load(book.descargado)
+                            .centerCrop()
+                            .into(bookViewHolder.portadaDescarga);
                     v.setClickable(false);
                     Toast.makeText(getApplicationContext(), "Descargando...", Toast.LENGTH_SHORT).show();
 
@@ -157,7 +168,7 @@ public class RepoActivity extends AppCompatActivity
 
         public class BookViewHolder extends RecyclerView.ViewHolder {
             TextView title;
-            ImageView portada;
+            ImageView portada, tipo;
             ImageView portadaDescarga;
 
 
@@ -166,6 +177,7 @@ public class RepoActivity extends AppCompatActivity
                 title = itemView.findViewById(R.id.book_title);
                 portada = itemView.findViewById(R.id.book_portada);
                 portadaDescarga = itemView.findViewById(R.id.book_portada_descarga);
+                tipo = itemView.findViewById(R.id.tiponovela);
 
 
             }

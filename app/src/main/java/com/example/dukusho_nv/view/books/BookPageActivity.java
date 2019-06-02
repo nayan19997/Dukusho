@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,8 +30,9 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class BookPageActivity extends AppCompatActivity {
-    ImageView fondopage,button_final;
+    ImageView fondopage, btn_volver,btn_salir;
     TextView pjname, textopage;
+    LinearLayout cajatexto;
     int seg = 50;
     Button option1, option2, next,previous;
 
@@ -49,8 +51,9 @@ public class BookPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_page);
 
-
-        button_final = findViewById(R.id.button_final);
+        btn_salir = findViewById(R.id.btn_salir);
+        cajatexto= findViewById(R.id.cajatexto);
+        btn_volver = findViewById(R.id.btn_volverleer);
         fondopage = findViewById(R.id.fondopage);
         pjname = findViewById(R.id.namepj);
         textopage = findViewById(R.id.textopage);
@@ -116,8 +119,8 @@ public class BookPageActivity extends AppCompatActivity {
             }
         });
 
-        System.out.println("ABCD -> pnum -> " + pageNum);
-        System.out.println("ABCD -> size -> " + size);
+//        System.out.println("ABCD -> pnum -> " + pageNum);
+//        System.out.println("ABCD -> size -> " + size);
 
         if (size != 0) {
             if (pageNum == size) {
@@ -147,8 +150,13 @@ public class BookPageActivity extends AppCompatActivity {
 
 
         Glide.with(BookPageActivity.this)
-                .load(page.image1)
-                .into(button_final);
+                .load(R.drawable.btn_volverleer)
+                .into(btn_volver);
+
+
+        Glide.with(BookPageActivity.this)
+                .load(R.drawable.btn_salir)
+                .into(btn_salir);
 
         GlideApp.with(BookPageActivity.this)
                 .load(page.image)
@@ -229,11 +237,33 @@ public class BookPageActivity extends AppCompatActivity {
             if (pageNum == size -1) {
                 next.setVisibility(View.INVISIBLE);
                 previous.setVisibility(View.INVISIBLE);
-                button_final.setVisibility(View.VISIBLE);
+                cajatexto.setVisibility(View.INVISIBLE);
+
+                btn_salir.setVisibility(View.VISIBLE);
+                btn_volver.setVisibility(View.VISIBLE);
+            }
+            else {
+                btn_salir.setVisibility(View.INVISIBLE);
+                btn_volver.setVisibility(View.INVISIBLE);
+
+
             }
         }
+        System.out.println("ABCD -> antes pnum -> " + pageNum);
 
-        button_final.setOnClickListener(new View.OnClickListener() {
+
+        btn_volver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BookPageActivity.this, GoToBookPageActivity.class);
+                intent.putExtra("PAGE_NUM", pageNum =0);
+                intent.putExtra("BOOK_KEY", bookKey);
+                intent.putExtra("ERROROPTION", erroroption);
+                startActivity(intent);
+                finish();
+            }
+        });
+        btn_salir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
@@ -326,7 +356,7 @@ public class BookPageActivity extends AppCompatActivity {
         final int[] i = new int[1];
 
         i[0] = 0;
-        final int length = s.length();
+        final  int length = s.length();
         final Handler handler = new Handler()
         {
             @Override
@@ -338,6 +368,7 @@ public class BookPageActivity extends AppCompatActivity {
                 i[0]++;
             }
         };
+
 
         final Timer timer = new Timer();
         TimerTask taskEverySplitSecond = new TimerTask() {

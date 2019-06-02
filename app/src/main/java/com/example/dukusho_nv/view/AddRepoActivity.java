@@ -28,12 +28,21 @@ import com.google.firebase.auth.FirebaseAuth;
 public class AddRepoActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     EditText eturl;
+    String repository1, repository2, repository3, repository4, repository5,repository6,repository7;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_repoo);
+
+        repository1="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoclawhammer.json";
+        repository2="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repokurohaneko.json";
+        repository3="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoalien.json";
+        repository4="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repocomic.json";
+        repository5="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoprincess.json";
+        repository6="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repodokusho.json";
+        repository7="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repokurohaneko.json";
 
         eturl= findViewById(R.id.et_url);
 
@@ -45,6 +54,80 @@ public class AddRepoActivity extends AppCompatActivity
                 startActivity(intent);
             }
         });
+
+
+
+        findViewById(R.id.repo1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddRepoActivity.this, RepoActivity.class);
+                intent.putExtra("ADDREPO",  repository1);
+                startActivity(intent);
+            }
+        });
+
+
+        findViewById(R.id.repo2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddRepoActivity.this, RepoActivity.class);
+                intent.putExtra("ADDREPO", repository2);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.repo3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddRepoActivity.this, RepoActivity.class);
+                intent.putExtra("ADDREPO", repository3);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.repo4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddRepoActivity.this, RepoActivity.class);
+                intent.putExtra("ADDREPO",  repository4);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.repo5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddRepoActivity.this, RepoActivity.class);
+                intent.putExtra("ADDREPO",  repository5);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.repo6).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddRepoActivity.this, RepoActivity.class);
+                intent.putExtra("ADDREPO", repository6);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.repo7).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddRepoActivity.this, RepoActivity.class);
+                intent.putExtra("ADDREPO",  repository7);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
+
+
+
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
