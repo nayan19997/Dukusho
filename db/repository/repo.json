@@ -1,12 +1,12 @@
 {
 "books": [
   {
-    "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/1.jpg",
+    "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/portadprueba.gif",
     "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
     "title": "Isekai",
     "author": "claw",
     "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
-
+     "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelainteractiva.png",
     "sinopsis":"alkjshdlkajhsdlkjhasdlkjahsdlkjh" ,
     "volumen":"1",
     "pagina":"11",
@@ -62,6 +62,7 @@
       "title": "League of laugh",
       "author": "Kuroha",
       "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
+      "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelainteractiva.png",
 
       "sinopsis":"alkjshdlkajhsdlkjhasdlkjahsdlkjh" ,
       "volumen":"1",
