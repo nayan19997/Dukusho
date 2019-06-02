@@ -204,9 +204,15 @@
     },
 
 
+
+
+
+
+
+
     {
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/portada3.jpg",
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/cover3.jpg",
+      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/portadav2.png",
+      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/coverv2.jpg",
       "title": "SAO volumen2:aincrad",
       "author": "claw",
       "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
@@ -311,9 +317,12 @@
 
 
 
+
+
+
     {
-      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/portada4.jpg",
-      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/cover4.jpg",
+      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/portadav2.png",
+      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/coverv2.jpg",
       "title": "SAO volumen2:aincrad",
       "author": "claw",
       "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
@@ -408,10 +417,11 @@
           "pjname": "Kirigaya Kazuto"
         }
 
+
+
+
       ]
     }
 
-    
-    
   ]
 }
