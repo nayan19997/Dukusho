@@ -55,6 +55,68 @@
         }
     ]
   },
+  
+  
+  
+  
+  {
+    "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/portadaprueba1.jpg",
+    "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/coverprueba1.jpg",
+    "title": "Libro magico",
+    "author": "gerard",
+    "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
+     "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelainteractiva.png",
+    "sinopsis":"un libro para poder probar el add repo" ,
+    "volumen":"1",
+    "pagina":"11",
+    "estado": "Finalizado",
+    "fechadelanzamiento": "20/05/2019",
+    "imgpj": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/garen.png",
+
+    "pages": [
+        {
+        "id": "0",
+        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/paguinaprueba1.jpeg",
+        "text": "esta es la paguina 1 ",
+        "pjname": "Claw"
+        },
+        {
+        "id": "1",
+        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
+        "text": "Que haras ir al insti o hacer campana ",
+        "pjname": "Claw",
+        "option1": {
+        "dest": "2",
+        "text": "Ir al insti :c"
+        },
+        "option2": {
+        "dest": "3",
+        "text": "Irme a pasarmelo bien :D"
+        }
+        },
+        {
+        "id": "2",
+        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
+        "text": "Bien!!!! no te han expulsado del del insti y tu vida no es una puta mrd?",
+        "pjname": "Claw"
+        },
+        {
+        "id": "3",
+        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
+        "text": "Por faltar a clase ahora estas en la mrd y trabajas de barrendero",
+        "pjname": "Claw"
+        },
+        {
+        "id": "4",
+        "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
+        "text": "funciona",
+        "pjname": "Claw"
+        }
+    ]
+  },
+  
+  
+  
 
     {
       "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/Portada.jpg",
