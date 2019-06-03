@@ -1,9 +1,102 @@
 {
   "books": [
+
+
+    {
+      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/isekai/portada.jpg",
+      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/isekai/cover.jpg",
+      "title": "Isekai",
+      "author": "ClawHammer",
+      "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
+      "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelainteractiva.png",
+      "sinopsis":"Es una historia que habla sobre diferentes mundos es lo viene a llamarse isekai en japones, la historia trata de que \n un chico muere y entra en un mundo distinto que parece haber salido de un juego... " ,
+      "volumen":"1",
+      "pagina":"8",
+      "estado": "En emision",
+      "fechadelanzamiento": "31/05/2019",
+      "imgpj": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/garen.png",
+
+      "pages": [
+        {
+          "id": "0",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/isekai/imagen1.jpg",
+          "text": "Hola a todos me llamo Emiya shirou, tengo 16 años y voy a segundo  de secundaria, nombre en los juegos archer, hoy les voy a contar una anécdota que me cambió la vida.\nPero la diferencia es que las decisiones que se va tomar en esta historia no seré yo quien las tome. Serás tú mi vida y mi futuro depende de ti.\n",
+          "pjname": "Emiya Shirou"
+        },
+
+        {
+          "id": "1",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/isekai/imagen2.jpg",
+          "text": "Un día común y corriente un chico vio que había salido un nuevo juego de última tecnología. Este trataba sobre la inmersión completa al juego,  pero él tiene miedo de jugarlo porque hace unos años mucha gente quedó atrapada en uno parecido y murió mucha gente\n",
+          "pjname": "Emiya Shirou"
+        },
+
+
+        {
+          "id": "2",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/isekai/imagen3.jpg",
+          "text": "Jugar o no jugar? ",
+          "pjname": "Claw",
+          "option1": {
+            "dest": "3",
+            "text": "Jugar asumiendo los riesgos"
+          },
+          "option2": {
+            "dest": "4",
+            "text": "No jugar, es peligroso"
+          }
+        },
+
+        {
+          "id": "3",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/isekai/imagen4.gif",
+          "text": "Link start, este mundo...voy a volver a este mundo no se como pude tardar tanto en decidirme en volver, esta vez si, sere el mejor cueste lo que cueste \n",
+          "pjname": "Emiya Shirou"
+        },
+        {
+          "id": "4",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/isekai/imagen5.gif",
+          "text": "Ahhhhhhh!!! me aburro mucho, creo que ire a comprar unos mangas, que rollo el dia esta nublado y no tengo paragua. Bueno que se le va a hacer, NANI!!!!! qué es esto una luz deslumbrante se acerca a mi.",
+          "pjname": "Claw"
+        },
+
+        {
+          "id": "5",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/isekai/imagen6.jpg",
+          "text": "Auchhhh que dolor de cabeza..veo todo borroso Quien ? quien me está hablando.\n- Hola chico, estas bien ? \nCreo que si, donde estoy ?\n- Bueno como decirlo para que no te asustes...hmmm estamos en el otro mundo, has muerto.",
+          "pjname": "Emiya Shirou"
+        },
+
+        {
+          "id": "6",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/isekai/imagen7.jpg",
+          "text": "Pero tranquilo chico puede resucitarte, pero el único problema es que no puedo devolverte al mismo mundo del que provienes. aquí tienes en este folleto hay las descripciones de cada mundo puedes escoger el que quieras, hay mundo de magia, tecnología, poderes etc.. \nEscoge con sabiduría .",
+          "pjname": "Emiya Shirou"
+        },
+
+
+
+        {
+          "id": "6",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen12.jpg",
+          "text": "null",
+          "pjname": "Emiya Shirou"
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
     {
       "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/portada.PNG",
       "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/cover.jpg",
-      "title": "SAO volumen 1:aincrad",
+      "title": "SAO volumen1:aincrad",
       "author": "claw",
       "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
       "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelavisual.png",
@@ -103,7 +196,7 @@
     {
       "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/portadav2.png",
       "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/coverv2.jpg",
-      "title": "SAO volumen 2:pina",
+      "title": "SAO volumen2:aincrad",
       "author": "claw",
       "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
       "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelavisual.png",
@@ -213,12 +306,12 @@
     {
       "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/portada3.jpg",
       "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/cover3.jpg",
-      "title": "SAO volumen 3: alo",
+      "title": "SAO volumen2:aincrad",
       "author": "claw",
       "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
       "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelavisual.png",
       "sinopsis": "Un enorme castillo de piedra y acero esta flotando en un cielo infinito.\nEsto era todo lo que este mundo fuese.\nLes llevó a un caprichoso grupo de artesanos cerca de un mes examinar el\nlugar, el diámetro de la base era de unos 10 kilómetros - lo suficientemente\ngrande como para fácilmente acomodar Setagaya1",
-      "volumen": "3",
+      "volumen": "2",
       "pagina": "20",
       "estado": "En emision",
       "fechadelanzamiento": "30/05/2019",
@@ -307,9 +400,6 @@
           "pjname": "Kirigaya Kazuto"
         }
 
-
-
-
       ]
     },
 
@@ -323,7 +413,7 @@
     {
       "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/portada4.jpg",
       "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/cover4.jpg",
-      "title": "SAO volumen 4: jaula de pajaros",
+      "title": "SAO volumen2:aincrad",
       "author": "claw",
       "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
       "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelavisual.png",
