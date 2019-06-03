@@ -36,7 +36,7 @@ public class AddRepoActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_repoo);
 
-        repository1="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoclawhammer.json";
+        repository1="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/reposclawhammer.json";
         repository2="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repokurohaneko.json";
         repository3="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoalien.json";
         repository4="https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repocomic.json";

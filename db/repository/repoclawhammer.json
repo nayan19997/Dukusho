@@ -1,5 +1,91 @@
 {
   "books": [
+
+
+    {
+      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/portadprueba.gif",
+      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/2.jpg",
+      "title": "Isekai",
+      "author": "ClawHammer",
+      "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
+      "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelainteractiva.png",
+      "sinopsis":"Es una historia que habla sobre diferentes mundos es lo viene a llamarse isekai en japones, la historia trata de que \n un chico muere y entra en un mundo distinto que parece haber salido de un juego... " ,
+      "volumen":"1",
+      "pagina":"8",
+      "estado": "Finalizado",
+      "fechadelanzamiento": "31/05/2019",
+      "imgpj": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/garen.png",
+
+      "pages": [
+        {
+          "id": "0",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
+          "text": "Hola a todos me llamo Emiya shirou, tengo 16 años y voy a segundo  de secundaria, nombre en los juegos archer, hoy les voy a contar una anécdota que me cambió la vida.\nPero la diferencia es que las decisiones que se va tomar en esta historia no seré yo quien las tome. Serás tú mi vida y mi futuro depende de ti.\n",
+          "pjname": "Emiya Shirou"
+        },
+
+        {
+          "id": "1",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/3.png",
+          "text": "Un día común y corriente un chico vio que había salido un nuevo juego de última tecnología. Este trataba sobre la inmersión completa al juego,  pero él tiene miedo de jugarlo porque hace unos años mucha gente quedó atrapada en uno parecido y murió mucha gente\n",
+          "pjname": "Emiya Shirou"
+        },
+
+
+        {
+          "id": "2",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/4.jpg",
+          "text": "Jugar o no jugar? ",
+          "pjname": "Claw",
+          "option1": {
+            "dest": "3",
+            "text": "Jugar asumiendo los riesgos"
+          },
+          "option2": {
+            "dest": "4",
+            "text": "No jugar, es peligroso"
+          }
+        },
+
+        {
+          "id": "3",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/5.jpg",
+          "text": "Link start, este mundo...voy a volver a este mundo no se como pude tardar tanto en decidirme en volver, esta vez si, sere el mejor cueste lo que cueste \n",
+          "pjname": "Emiya Shirou"
+        },
+        {
+          "id": "4",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
+          "text": "Ahhhhhhh!!! me aburro mucho, creo que ire a comprar unos mangas, que rollo el dia esta nublado y no tengo paragua. Bueno que se le va a hacer, NANI!!!!! qué es esto una luz deslumbrante se acerca a mi.",
+          "pjname": "Claw"
+        },
+
+        {
+          "id": "5",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
+          "text": "Auchhhh que dolor de cabeza..veo todo borroso Quien ? quien me está hablando.\n- Hola chico, estas bien ? \nCreo que si, donde estoy ?\n- Bueno como decirlo para que no te asustes...hmmm estamos en el otro mundo, has muerto.",
+          "pjname": "Emiya Shirou"
+        },
+
+        {
+          "id": "6",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/6.png",
+          "text": "Pero tranquilo chico puede resucitarte, pero el único problema es que no puedo devolverte al mismo mundo del que provienes. aquí tienes en este folleto hay las descripciones de cada mundo puedes escoger el que quieras, hay mundo de magia, tecnología, poderes etc.. \nEscoge con sabiduría .",
+          "pjname": "Emiya Shirou"
+        }
+
+
+      ]
+    },
+
+
+
+
+
+
+
+
+
     {
       "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/portada.PNG",
       "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/cover.jpg",
@@ -9,7 +95,7 @@
       "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelavisual.png",
       "sinopsis": "Un enorme castillo de piedra y acero esta flotando en un cielo infinito.\nEsto era todo lo que este mundo fuese.\nLes llevó a un caprichoso grupo de artesanos cerca de un mes examinar el\nlugar, el diámetro de la base era de unos 10 kilómetros - lo suficientemente\ngrande como para fácilmente acomodar Setagaya1",
       "volumen": "1",
-      "pagina": "11",
+      "pagina": "15",
       "estado": "En emision",
       "fechadelanzamiento": "30/05/2019",
       "imgpj": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/garen.png",
@@ -52,36 +138,373 @@
 
         {
           "id": "5",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen5.jpg",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen6.jpg",
+          "text": "“Mágico” fue considerado como una parte indispensable de los MMORPG de\nfantasía había sido cortado con valentía y una cantidad casi infinita de\nhabilidades llamadas “Sword Skill” se hicieron. Era parte de un plan para que\nlos jugadores realmente sintieran la experiencia de la lucha con su propio\ncuerpo a través del FullDive tanto como sea posible.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "6",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen7.jpg",
+          "text": "Las habilidades fueron variadas, incluyendo las capacidades productivas, tales\ncomo la herrería, el trabajo del cuero y costura, y las habilidades diarias como\nla pesca, cocina y la música, permitiendo que el jugador no sólo tenga una\naventura del juego enorme, sino que en realidad pueda “vivir” en él. Si así lo\nquiere y si sus niveles de competencia eran lo suficientemente altos que podían\ncomprar una casa y vivir como pastores.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "7",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen8.jpg",
+          "text": "Como la información se revela constantemente, el entusiasmo de los jugadores\n\"sólo es ir arriba.\nLa prueba beta sólo reclutó a mil testers, se dice que mas de cien mil personas,\nla mitad de NERvGear vendidos en ese momento, se ofreció a ser un\nTester. La suerte fue la única razón que me vieron a través del espacio\nestrecho y fui escogido. Además, los betas testers recibieron el beneficio\nadicional de ser la prioridad cuando el juego saliera oficialmente.",
+          "pjname": "Kirigaya Kazuto"
+        },
+        {
+          "id": "8",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen9.jpg",
+          "text": "Los dos meses de pruebas beta fue como un sueño. En la escuela yo pensaba\nsin cesar en mis habilidades, equipos y elementos y corría todo el camino a mi\ncasa tan pronto como terminaba la escuela y me sumergía hasta el\namanecer. La prueba beta terminó en un abrir y cerrar de ojos, y el día que mi\npersonaje era restablecido sentí una sensación de pérdida, como si la mitad de\nmi ser real hubiera sido cortado.",
+          "pjname": "Kirigaya Kazuto"
+        },
+        {
+          "id": "9",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/image10.jpg",
+          "text": "Y ahora, 11 de noviembre 2022, domingo.\n“Sword Art Online” después de que todos los preparativos estuvieron\nterminados y a la 1:00 PM comenzó oficialmente su servicio de servidor.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "10",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen11.jpg",
+          "text": "Por supuesto, yo había estado esperando durante 30 minutos y luego iniciar\nsesión sin ni siquiera un segundo de retraso, pero cuando revisé el estado del\nservidor a través 905 personas habían entrado ya en el. Parecía como si todas\nlas personas que habían tenido la suerte de tener en sus manos el juego se\nhabía sentido lo mismo que yo. Todos los sitios de compras en línea ha\nanunciado que el juego se agotó segundos después de haber salido a la venta\ny de los establecimientos, que había comenzado ayer, había creado filas de\npersonas que había esperado durante cuatro días, creando suficiente de una\nraqueta para continuar las noticias. Eso significaba que toda la gente que había\nsido capaz de comprar una copia del juego, casi todos son adictos a los\nvideojuegos.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "11",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen12.jpg",
+          "text": "XD",
+          "pjname": "Kirigaya Kazuto"
+        }
+      ]
+    },
+
+
+    {
+      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/portadav2.png",
+      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/coverv2.jpg",
+      "title": "SAO volumen2:aincrad",
+      "author": "claw",
+      "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
+      "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelavisual.png",
+      "sinopsis": "Un enorme castillo de piedra y acero esta flotando en un cielo infinito.\nEsto era todo lo que este mundo fuese.\nLes llevó a un caprichoso grupo de artesanos cerca de un mes examinar el\nlugar, el diámetro de la base era de unos 10 kilómetros - lo suficientemente\ngrande como para fácilmente acomodar Setagaya1",
+      "volumen": "2",
+      "pagina": "20",
+      "estado": "En emision",
+      "fechadelanzamiento": "30/05/2019",
+      "imgpj": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/garen.png",
+
+      "pages": [
+        {
+          "id": "0",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen1.jpg",
+          "text": "null",
+          "pjname": "Claw"
+        },
+
+        {
+          "id": "1",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen2.jpg",
+          "text": "null",
+          "pjname": "Claw"
+        },
+
+        {
+          "id": "2",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen3.jpg",
+          "text": "null",
+          "pjname": "Claw"
+        },
+
+        {
+          "id": "3",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen4.jpg",
           "text": "Cuando la anticipación y la ansiedad llegaron a su límite, el primer\nVRMMORPG fue anunciado justo a tiempo, “Sword Art Online”. El escenario\npara el juego es un castillo flotante que consta de 100 pisos.",
           "pjname": "Kirigaya Kazuto"
         },
 
         {
           "id": "4",
-          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen3.jpg",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/image5.jpg",
           "text": "Los jugadores viven en un mundo con bosques y lagos, contando con sólo su\nespada y la unidad para descubrir la ruta hacia los pisos superiores y derrotar a\nun sinnúmero de monstruos y hacer su camino hacia la cima sin fin.",
           "pjname": "Kirigaya Kazuto"
         },
 
         {
           "id": "5",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen6.jpg",
+          "text": "“Mágico” fue considerado como una parte indispensable de los MMORPG de\nfantasía había sido cortado con valentía y una cantidad casi infinita de\nhabilidades llamadas “Sword Skill” se hicieron. Era parte de un plan para que\nlos jugadores realmente sintieran la experiencia de la lucha con su propio\ncuerpo a través del FullDive tanto como sea posible.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "6",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen7.jpg",
+          "text": "Las habilidades fueron variadas, incluyendo las capacidades productivas, tales\ncomo la herrería, el trabajo del cuero y costura, y las habilidades diarias como\nla pesca, cocina y la música, permitiendo que el jugador no sólo tenga una\naventura del juego enorme, sino que en realidad pueda “vivir” en él. Si así lo\nquiere y si sus niveles de competencia eran lo suficientemente altos que podían\ncomprar una casa y vivir como pastores.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "7",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen8.jpg",
+          "text": "Como la información se revela constantemente, el entusiasmo de los jugadores\n\"sólo es ir arriba.\nLa prueba beta sólo reclutó a mil testers, se dice que mas de cien mil personas,\nla mitad de NERvGear vendidos en ese momento, se ofreció a ser un\nTester. La suerte fue la única razón que me vieron a través del espacio\nestrecho y fui escogido. Además, los betas testers recibieron el beneficio\nadicional de ser la prioridad cuando el juego saliera oficialmente.",
+          "pjname": "Kirigaya Kazuto"
+        },
+        {
+          "id": "8",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen9.jpg",
+          "text": "Los dos meses de pruebas beta fue como un sueño. En la escuela yo pensaba\nsin cesar en mis habilidades, equipos y elementos y corría todo el camino a mi\ncasa tan pronto como terminaba la escuela y me sumergía hasta el\namanecer. La prueba beta terminó en un abrir y cerrar de ojos, y el día que mi\npersonaje era restablecido sentí una sensación de pérdida, como si la mitad de\nmi ser real hubiera sido cortado.",
+          "pjname": "Kirigaya Kazuto"
+        },
+        {
+          "id": "9",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/image10.jpg",
+          "text": "Y ahora, 11 de noviembre 2022, domingo.\n“Sword Art Online” después de que todos los preparativos estuvieron\nterminados y a la 1:00 PM comenzó oficialmente su servicio de servidor.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "10",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen11.jpg",
+          "text": "Por supuesto, yo había estado esperando durante 30 minutos y luego iniciar\nsesión sin ni siquiera un segundo de retraso, pero cuando revisé el estado del\nservidor a través 905 personas habían entrado ya en el. Parecía como si todas\nlas personas que habían tenido la suerte de tener en sus manos el juego se\nhabía sentido lo mismo que yo. Todos los sitios de compras en línea ha\nanunciado que el juego se agotó segundos después de haber salido a la venta\ny de los establecimientos, que había comenzado ayer, había creado filas de\npersonas que había esperado durante cuatro días, creando suficiente de una\nraqueta para continuar las noticias. Eso significaba que toda la gente que había\nsido capaz de comprar una copia del juego, casi todos son adictos a los\nvideojuegos.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "11",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen12.jpg",
+          "text": "XD",
+          "pjname": "Kirigaya Kazuto"
+        }
+
+
+
+
+      ]
+    },
+
+
+
+
+
+
+
+
+    {
+      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/portada3.jpg",
+      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/cover3.jpg",
+      "title": "SAO volumen2:aincrad",
+      "author": "claw",
+      "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
+      "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelavisual.png",
+      "sinopsis": "Un enorme castillo de piedra y acero esta flotando en un cielo infinito.\nEsto era todo lo que este mundo fuese.\nLes llevó a un caprichoso grupo de artesanos cerca de un mes examinar el\nlugar, el diámetro de la base era de unos 10 kilómetros - lo suficientemente\ngrande como para fácilmente acomodar Setagaya1",
+      "volumen": "2",
+      "pagina": "20",
+      "estado": "En emision",
+      "fechadelanzamiento": "30/05/2019",
+      "imgpj": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/garen.png",
+
+      "pages": [
+        {
+          "id": "0",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen1.jpg",
+          "text": "null",
+          "pjname": "Claw"
+        },
+
+        {
+          "id": "1",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen2.jpg",
+          "text": "null",
+          "pjname": "Claw"
+        },
+
+        {
+          "id": "2",
           "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen3.jpg",
+          "text": "null",
+          "pjname": "Claw"
+        },
+
+        {
+          "id": "3",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen4.jpg",
           "text": "Cuando la anticipación y la ansiedad llegaron a su límite, el primer\nVRMMORPG fue anunciado justo a tiempo, “Sword Art Online”. El escenario\npara el juego es un castillo flotante que consta de 100 pisos.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "4",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/image5.jpg",
+          "text": "Los jugadores viven en un mundo con bosques y lagos, contando con sólo su\nespada y la unidad para descubrir la ruta hacia los pisos superiores y derrotar a\nun sinnúmero de monstruos y hacer su camino hacia la cima sin fin.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "5",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen6.jpg",
+          "text": "“Mágico” fue considerado como una parte indispensable de los MMORPG de\nfantasía había sido cortado con valentía y una cantidad casi infinita de\nhabilidades llamadas “Sword Skill” se hicieron. Era parte de un plan para que\nlos jugadores realmente sintieran la experiencia de la lucha con su propio\ncuerpo a través del FullDive tanto como sea posible.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "6",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen7.jpg",
+          "text": "Las habilidades fueron variadas, incluyendo las capacidades productivas, tales\ncomo la herrería, el trabajo del cuero y costura, y las habilidades diarias como\nla pesca, cocina y la música, permitiendo que el jugador no sólo tenga una\naventura del juego enorme, sino que en realidad pueda “vivir” en él. Si así lo\nquiere y si sus niveles de competencia eran lo suficientemente altos que podían\ncomprar una casa y vivir como pastores.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "7",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen8.jpg",
+          "text": "Como la información se revela constantemente, el entusiasmo de los jugadores\n\"sólo es ir arriba.\nLa prueba beta sólo reclutó a mil testers, se dice que mas de cien mil personas,\nla mitad de NERvGear vendidos en ese momento, se ofreció a ser un\nTester. La suerte fue la única razón que me vieron a través del espacio\nestrecho y fui escogido. Además, los betas testers recibieron el beneficio\nadicional de ser la prioridad cuando el juego saliera oficialmente.",
+          "pjname": "Kirigaya Kazuto"
+        },
+        {
+          "id": "8",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen9.jpg",
+          "text": "Los dos meses de pruebas beta fue como un sueño. En la escuela yo pensaba\nsin cesar en mis habilidades, equipos y elementos y corría todo el camino a mi\ncasa tan pronto como terminaba la escuela y me sumergía hasta el\namanecer. La prueba beta terminó en un abrir y cerrar de ojos, y el día que mi\npersonaje era restablecido sentí una sensación de pérdida, como si la mitad de\nmi ser real hubiera sido cortado.",
+          "pjname": "Kirigaya Kazuto"
+        },
+        {
+          "id": "9",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/image10.jpg",
+          "text": "Y ahora, 11 de noviembre 2022, domingo.\n“Sword Art Online” después de que todos los preparativos estuvieron\nterminados y a la 1:00 PM comenzó oficialmente su servicio de servidor.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "10",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen11.jpg",
+          "text": "Por supuesto, yo había estado esperando durante 30 minutos y luego iniciar\nsesión sin ni siquiera un segundo de retraso, pero cuando revisé el estado del\nservidor a través 905 personas habían entrado ya en el. Parecía como si todas\nlas personas que habían tenido la suerte de tener en sus manos el juego se\nhabía sentido lo mismo que yo. Todos los sitios de compras en línea ha\nanunciado que el juego se agotó segundos después de haber salido a la venta\ny de los establecimientos, que había comenzado ayer, había creado filas de\npersonas que había esperado durante cuatro días, creando suficiente de una\nraqueta para continuar las noticias. Eso significaba que toda la gente que había\nsido capaz de comprar una copia del juego, casi todos son adictos a los\nvideojuegos.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "11",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen12.jpg",
+          "text": "XD",
           "pjname": "Kirigaya Kazuto"
         }
 
       ]
+    },
+
+
+
+
+
+
+
+
+    {
+      "portada": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/portada4.jpg",
+      "cover": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/cover4.jpg",
+      "title": "SAO volumen2:aincrad",
+      "author": "claw",
+      "descargado": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/descargadoo.png",
+      "tipo":"https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/novelavisual.png",
+      "sinopsis": "Un enorme castillo de piedra y acero esta flotando en un cielo infinito.\nEsto era todo lo que este mundo fuese.\nLes llevó a un caprichoso grupo de artesanos cerca de un mes examinar el\nlugar, el diámetro de la base era de unos 10 kilómetros - lo suficientemente\ngrande como para fácilmente acomodar Setagaya1",
+      "volumen": "2",
+      "pagina": "20",
+      "estado": "En emision",
+      "fechadelanzamiento": "30/05/2019",
+      "imgpj": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/LibroLux/garen.png",
+
+      "pages": [
+        {
+          "id": "0",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen1.jpg",
+          "text": "null",
+          "pjname": "Claw"
+        },
+
+        {
+          "id": "1",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen2.jpg",
+          "text": "null",
+          "pjname": "Claw"
+        },
+
+        {
+          "id": "2",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen3.jpg",
+          "text": "null",
+          "pjname": "Claw"
+        },
+
+        {
+          "id": "3",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen4.jpg",
+          "text": "Cuando la anticipación y la ansiedad llegaron a su límite, el primer\nVRMMORPG fue anunciado justo a tiempo, “Sword Art Online”. El escenario\npara el juego es un castillo flotante que consta de 100 pisos.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "4",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/image5.jpg",
+          "text": "Los jugadores viven en un mundo con bosques y lagos, contando con sólo su\nespada y la unidad para descubrir la ruta hacia los pisos superiores y derrotar a\nun sinnúmero de monstruos y hacer su camino hacia la cima sin fin.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "5",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen6.jpg",
+          "text": "“Mágico” fue considerado como una parte indispensable de los MMORPG de\nfantasía había sido cortado con valentía y una cantidad casi infinita de\nhabilidades llamadas “Sword Skill” se hicieron. Era parte de un plan para que\nlos jugadores realmente sintieran la experiencia de la lucha con su propio\ncuerpo a través del FullDive tanto como sea posible.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "6",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen7.jpg",
+          "text": "Las habilidades fueron variadas, incluyendo las capacidades productivas, tales\ncomo la herrería, el trabajo del cuero y costura, y las habilidades diarias como\nla pesca, cocina y la música, permitiendo que el jugador no sólo tenga una\naventura del juego enorme, sino que en realidad pueda “vivir” en él. Si así lo\nquiere y si sus niveles de competencia eran lo suficientemente altos que podían\ncomprar una casa y vivir como pastores.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "7",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen8.jpg",
+          "text": "Como la información se revela constantemente, el entusiasmo de los jugadores\n\"sólo es ir arriba.\nLa prueba beta sólo reclutó a mil testers, se dice que mas de cien mil personas,\nla mitad de NERvGear vendidos en ese momento, se ofreció a ser un\nTester. La suerte fue la única razón que me vieron a través del espacio\nestrecho y fui escogido. Además, los betas testers recibieron el beneficio\nadicional de ser la prioridad cuando el juego saliera oficialmente.",
+          "pjname": "Kirigaya Kazuto"
+        },
+        {
+          "id": "8",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen9.jpg",
+          "text": "Los dos meses de pruebas beta fue como un sueño. En la escuela yo pensaba\nsin cesar en mis habilidades, equipos y elementos y corría todo el camino a mi\ncasa tan pronto como terminaba la escuela y me sumergía hasta el\namanecer. La prueba beta terminó en un abrir y cerrar de ojos, y el día que mi\npersonaje era restablecido sentí una sensación de pérdida, como si la mitad de\nmi ser real hubiera sido cortado.",
+          "pjname": "Kirigaya Kazuto"
+        },
+        {
+          "id": "9",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/image10.jpg",
+          "text": "Y ahora, 11 de noviembre 2022, domingo.\n“Sword Art Online” después de que todos los preparativos estuvieron\nterminados y a la 1:00 PM comenzó oficialmente su servicio de servidor.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "10",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen11.jpg",
+          "text": "Por supuesto, yo había estado esperando durante 30 minutos y luego iniciar\nsesión sin ni siquiera un segundo de retraso, pero cuando revisé el estado del\nservidor a través 905 personas habían entrado ya en el. Parecía como si todas\nlas personas que habían tenido la suerte de tener en sus manos el juego se\nhabía sentido lo mismo que yo. Todos los sitios de compras en línea ha\nanunciado que el juego se agotó segundos después de haber salido a la venta\ny de los establecimientos, que había comenzado ayer, había creado filas de\npersonas que había esperado durante cuatro días, creando suficiente de una\nraqueta para continuar las noticias. Eso significaba que toda la gente que había\nsido capaz de comprar una copia del juego, casi todos son adictos a los\nvideojuegos.",
+          "pjname": "Kirigaya Kazuto"
+        },
+
+        {
+          "id": "11",
+          "image": "https://raw.githubusercontent.com/nayan19997/Dukusho/master/db/repository/repoImage/clawhammer/sao/imagen12.jpg",
+          "text": "XD",
+          "pjname": "Kirigaya Kazuto"
+        }
+
+
+
+
+      ]
     }
-
-
-
-
-
-
-
-
-
 
   ]
 }

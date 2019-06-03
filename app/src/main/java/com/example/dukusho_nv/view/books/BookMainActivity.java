@@ -99,6 +99,7 @@ public class BookMainActivity extends AppCompatActivity {
                 Intent intent = new Intent(BookMainActivity.this, MyBooksActivity.class);
 
                 startActivity(intent);
+                finish();
             }
         });
 

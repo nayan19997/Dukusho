@@ -54,7 +54,6 @@
     </LinearLayout>
 
 
-
     <ImageView
         android:id="@+id/btn_volverleer"
         android:layout_width="200dp"
@@ -64,25 +63,22 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/cajatexto"
         app:layout_constraintEnd_toEndOf="@+id/fondopage"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="@+id/fondopage"
         app:layout_constraintTop_toTopOf="@+id/fondopage"
-        app:layout_constraintVertical_bias="0.518" />
+        app:layout_constraintVertical_bias="0.713" />
 
     <ImageView
         android:id="@+id/btn_salir"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/cajatexto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_volverleer"
-        app:layout_constraintVertical_bias="0.233" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_volverleer" />
 
 
 
